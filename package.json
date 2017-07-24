@@ -1,0 +1,13 @@
+{
+  "name": "squar-home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "fullpage.js": "^2.9.4"
+  }
+}
