@@ -7,13 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="shortcut icon" type="image/png" href="icon/favicon.ico" />
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
 
-  <span id="hamburger" onclick="openNav()">
+  <img src="icon/Logo-Mysquar.png" alt="logo" class="logo pointer animated fadeInLeft">
+
+  <span id="hamburger" onclick="openNav()" class="pointer animated fadeInRight">
     <img src="icon/ic-menu.png" alt="sidenav" />
   </span>
+
+  <div class="scroll-indicator animated fadeInRight">
+
+    <img src="icon/ic-slider-active.png" alt="ic-scroll-down">
+    <br/>
+    <span onclick="srcollDown()" class="pointer">Scroll down</span>
+  </div>
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -23,11 +34,31 @@
     <a href="#">Contact</a>
   </div>
 
-
   <div class="container">
 
     <div id="fullpage">
-      <div id="section1" class="section" active>Page 1</div>
+      <div id="section1" class="section" active>
+
+        <div class="hero">
+          <img src="icon/ic-circle.png" alt="hero-background" class="spin-circle">
+          <div class="slogan animated fadeInRight">
+            <span class="title">WE ARE
+              <br />
+               <span class="bold-yellow">YOUNG</span>
+            <br /> AND
+            <br />
+            <span class="typer" data-delay="150" data-words="ELECTRIC,FUN" data-colors="#e4b215"></span>
+            <span class="cursor" data-owner="first-typer"></span>
+            <!-- <span class="bold-yellow">ELECTRIC</span> -->
+            </span>
+            <!-- <p>I enjoy <span class="typer" data-delay="150" data-words="apples,oranges,blueberries" data-colors="red,orange,blue"></span></p>
+            <span class="cursor" data-owner="first-typer"></span> -->
+          </div>
+
+        </div>
+
+      </div>
+
       <div id="section2" class="section">Page 2</div>
       <div id="section3" class="section">Page 3</div>
       <div id="section4" class="section">Page 4</div>
@@ -35,12 +66,11 @@
     </div>
 
   </div>
-  <img src="icon/Logo-Mysquar.png" alt="logo" class="logo">
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-  <script type="text/javascript" src="js/index.js">
-
-  </script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/typer.js"></script>
 </body>
 
 </html>

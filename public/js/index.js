@@ -8,6 +8,25 @@ function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
 
+function srcollDown() {
+  $.fn.fullpage.moveSectionDown();
+}
+
 $(document).ready(function() {
-  $('#fullpage').fullpage();
+  $('#fullpage').fullpage({
+    navigation: true,
+    navigationPosition: 'right',
+    scrollingSpeed: 550
+  });
+
+  $('#fp-nav').addClass('animated fadeInRight');
+  $('.spin-circle')
+    .addClass('spin-circle-animate animated fadeIn')
+    .one(
+      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function() {
+        $(this).removeClass('spin-circle-animate animated fadeIn');
+        $(this).addClass('spin-circle');
+      }
+    );
 });
