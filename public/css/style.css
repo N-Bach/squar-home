@@ -139,30 +139,25 @@
 }
 
 .spin-circle {
-  position: absolute;
   animation: App-logo-spin infinite 60s linear;
-  max-height: 70%;
-  max-width: 70%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 .spin-circle-animate {
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-iteration-count: 1;
+}
+
+.center-screen {
   position: absolute;
-  max-height: 70%;
-  max-width: 70%;
+  max-height: 90%;
+  max-width: 80%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-delay: 1s;
 }
 
 .pointer:hover {
@@ -170,11 +165,6 @@
 }
 
 .slogan {
-  /* width: 350px;
-  margin: auto;
-  position: relative;
-  top: 33%;
-  left: 2%; */
   color: white;
   width: 400px;
   text-align: center;

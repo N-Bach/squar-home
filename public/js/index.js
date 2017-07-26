@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
 
   $('#fp-nav').addClass('animated fadeInRight');
-  $('.spin-circle')
+  $('.center-screen')
     .addClass('spin-circle-animate animated fadeIn')
     .one(
       'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
