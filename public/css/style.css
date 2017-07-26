@@ -1,5 +1,7 @@
 * {
   font-family: 'Gill Sans';
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: black; */
 }
 
 .logo {
@@ -31,7 +33,7 @@
 }
 
 #section2 {
-  background: url('../img/banner2.jpg');
+  background: url('../img/Bg-decoration.png');
 }
 #section3 {
   background: url('../img/banner3.jpg');
@@ -138,14 +140,61 @@
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.about-us-header {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 3.2em;
+  font-weight: normal;
+  margin-bottom: 6px;
+  -webkit-text-stroke-width: 2px;
+  letter-spacing: 2px;
+}
+
+.sub-header {
+  color: rgb(182, 182, 182);
+  text-align: center;
+  font-size: 1.25em;
+  margin: 16px 0px 16px 0px;
+  /* font-family: 'Gill Sans Light'; */
+  font-weight: lighter;
+  max-width: 80%;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+
+.seperator {
+  font-size: 1.8em;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-weight: lighter;
+  color: #f4df9d;
+}
+
+.sub-p {
+  color: #161616;
+  text-align: center;
+  font-size: 1em;
+}
+
+.about-us-pic {
+  margin-top: 10px;
+  max-width: 75%;
+  height: 200px;
+}
+
 .spin-circle {
   animation: App-logo-spin infinite 60s linear;
 }
 
 .spin-circle-animate {
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.8s;
   -webkit-animation-iteration-count: 1;
-  -moz-animation-delay: 0.5s;
+  -moz-animation-delay: 0.8s;
   -moz-animation-iteration-count: 1;
 }
 
