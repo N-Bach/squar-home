@@ -83,6 +83,10 @@
   transition: 0.3s;
 }
 
+.sidenav .page-link a span {
+  display: block;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav .page-link a:hover,
 .offcanvas .page-link a:focus {
