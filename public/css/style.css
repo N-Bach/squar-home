@@ -8,8 +8,8 @@
   position: fixed;
   top: 30px;
   left: 30px;
-  width: 59px;
-  height: 59px;
+  width: 56px;
+  height: 56px;
   z-index: 10;
 }
 
@@ -36,7 +36,7 @@
   background: url('../img/Bg-decoration.png');
 }
 #section3 {
-  background: url('../img/banner3.jpg');
+  background: url('../img/Bg-decoration.png');
 }
 #section4 {
   background: url('../img/banner4.jpg');
@@ -47,14 +47,14 @@
 
 #hamburger {
   position: fixed;
-  top: 40px;
-  right: 30px;
+  top: 38px;
+  right: 38px;
   z-index: 10;
 }
 
 #hamburger img {
-  width: 22px;
-  height: 17px;
+  width: 28px;
+  height: 21px;
 }
 
 /* The side navigation menu */
@@ -65,18 +65,20 @@
   z-index: 110; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #111; /* Black*/
+  /* background-color: #111;  Black */
+  background-image: url('../img/bg.jpg');
+  background-size: 100% 100%;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  /* padding-top: 60px;  Place content 60px from the top  */
   transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  /* color: #818181; */
+  color: white;
+  font-size: 2em;
   display: block;
   transition: 0.3s;
 }
@@ -84,16 +86,16 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover,
 .offcanvas a:focus {
-  color: #f1f1f1;
+  color: #9e2baf;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  top: 38px;
+  right: 40px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -160,7 +162,6 @@
   text-align: center;
   font-size: 1.25em;
   margin: 16px 0px 16px 0px;
-  /* font-family: 'Gill Sans Light'; */
   font-weight: lighter;
   max-width: 80%;
   letter-spacing: 0.3px;
@@ -223,8 +224,8 @@
 
 .scroll-indicator {
   position: fixed;
-  right: 24px;
-  bottom: 36px;
+  right: 29px;
+  bottom: 46px;
   text-align: center;
   z-index: 10;
 }
@@ -242,4 +243,101 @@
 #scroll-down {
   width: 24px;
   height: 60px;
+}
+
+#section3 img {
+  height: 60%;
+  width: 26%;
+}
+
+.text {
+  margin-left: 36px;
+}
+
+.what-we-do-header {
+  margin-top: 60px;
+  font-size: 3.2em;
+  font-weight: normal;
+  margin-bottom: 6px;
+  -webkit-text-stroke-width: 2px;
+  letter-spacing: 2px;
+}
+
+.what-we-do-sub-header {
+  color: rgb(182, 182, 182);
+  font-size: 1.25em;
+  margin: 16px 0px 16px 0px;
+  font-weight: lighter;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+
+#mySidenav footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  /* background-color: gainsboro; */
+}
+
+#mySidenav .social-link {
+  padding: 8px 16px;
+}
+
+#mySidenav .social-link  a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+#mySidenav .social-link img {
+  margin-right: 4px;
+  height: 40px;
+  width: 40px;
+}
+
+#mySidenav footer span {
+  color: white;
+  font-size: 0.9em;
+  margin: 8px 16px;
+}
+
+#mySidenav .page-link {
+  margin-top: 130px;
+  /* margin-top: 60px; */
+  margin-left: 8px;
+}
+
+#mySidenav .page-link a {
+  padding: 8px 8px 16px 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+#locale-toggle {
+  position: relative;
+}
+
+#locale-toggle .locale-btn {
+  position: absolute;
+  top: 34px;
+  left: 32px;
+  width: 75px;
+  height: 27px;
+}
+
+#locale-toggle #locale-english {
+  position: absolute;
+  font-size: 0.8em;
+  color: white;
+  top: 27px;
+  left: 45px;
+}
+
+#locale-toggle #locale-myanmar {
+  position: absolute;
+  font-size: 0.8em;
+  color: #e9bf3c;
+  top: 27px;
+  left: 78px;
 }

@@ -114,7 +114,7 @@ html.fp-enabled,
 }
 #fp-nav.right {
   /* edited here */
-  right: 42px;
+  right: 41px;
 }
 #fp-nav.left {
   left: 17px;
@@ -167,8 +167,8 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a.active span {
   /* height: 12px; */
   /* width: 12px; */
-  height: 17px;
-  width: 17px;
+  height: 14px;
+  width: 14px;
   /* margin: -15px 0 0 -15px; */
   /* border-radius: 100%; */
   background-image: url('../../img/icon/ic-slider-active.png');
@@ -185,8 +185,8 @@ html.fp-enabled,
   z-index: 1;
   /* height: 4px;
   width: 4px; */
-  height: 17px;
-  width: 17px;
+  height: 14px;
+  width: 14px;
   /* border: 0; */
   /* background: white; */
   /* old is 50% */
@@ -200,8 +200,8 @@ html.fp-enabled,
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
-  width: 17px;
-  height: 17px;
+  width: 14px;
+  height: 14px;
   /* margin: -13px 0px 0px -13px; */
 }
 #fp-nav ul li .fp-tooltip {
