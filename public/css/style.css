@@ -74,7 +74,7 @@
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav .page-link a {
   text-decoration: none;
   /* color: #818181; */
   color: white;
@@ -84,9 +84,14 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover,
-.offcanvas a:focus {
-  color: #9e2baf;
+.sidenav .page-link a:hover,
+.offcanvas .page-link a:focus {
+  border-left: 6px solid white;
+}
+
+.sidenav .page-link a span:hover,
+.offcanvas .page-link a span:focus {
+  opacity: 0.6;
 }
 
 /* Position and style the close button (top right corner) */
@@ -292,24 +297,24 @@
 
 #mySidenav .social-link img {
   margin-right: 4px;
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
 }
 
 #mySidenav footer span {
   color: white;
-  font-size: 0.9em;
+  font-size: 14px;
   margin: 8px 16px;
 }
 
 #mySidenav .page-link {
   margin-top: 130px;
   /* margin-top: 60px; */
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
 
 #mySidenav .page-link a {
-  padding: 8px 8px 16px 24px;
+  padding: 8px 8px 16px 32px;
   font-weight: 600;
   line-height: 1.15;
 }
