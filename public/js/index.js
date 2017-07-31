@@ -8,8 +8,24 @@ function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
 
-function srcollDown() {
+function scrollDown() {
   $.fn.fullpage.moveSectionDown();
+}
+
+function scrollTop() {
+  $.fn.fullpage.moveTo(1);
+}
+
+function addScrollDown() {
+  console.log('added to other page');
+  $('#scroll-down').off('click').click(scrollDown);
+  $('#text-scroll-down').off('click').click(scrollDown);
+}
+
+function addScrollTop() {
+  console.log('added to 5th page');
+  $('#scroll-down').off('click').click(scrollTop);
+  $('#text-scroll-down').off('click').click(scrollTop);
 }
 
 function switchThemeDark(index) {
@@ -45,9 +61,25 @@ function updateScrollText(text) {
   $('#text-scroll-down').html(text);
 }
 
+function updateScrollIndicatorUp() {
+  $('#scroll-down').attr('src', 'img/icon/ic-animated-scroll-up.gif');
+}
+
+function updateScrollIndicatorLight() {
+  $('#scroll-down').attr('src', 'img/icon/ic-animated-scroll.gif');
+  $('#text-scroll-down').css('color', 'white');
+}
+
+function updateScrollIndicatorDark() {
+  $('#scroll-down').attr('src', 'img/icon/ic-animated-scroll-yellow.gif');
+  $('#text-scroll-down').css('color', 'black');
+}
+
 $(document).ready(function() {
   var $isAnimatedSecond = $('#section2 .is-animated');
+  var $isAnimatedThird = $('#section3 .is-animated');
   var $isAnimatedFifth = $('#section5 .is-animated');
+  addScrollDown();
   $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
@@ -74,6 +106,18 @@ $(document).ready(function() {
         $isAnimatedSecond.eq(4).addClass('animated fadeIn').css('animation-delay', '1s');
       }
 
+      if (nextIndex === 3) {
+        $isAnimatedThird.eq(0).addClass('animated fadeIn').css('animation-delay', '.4s');
+        $isAnimatedThird.eq(1).addClass('animated fadeIn').css('animation-delay', '.6s');
+        // card list
+        $isAnimatedThird.eq(2).addClass('animated fadeIn').css('animation-delay', '.8s');
+        $isAnimatedThird.eq(3).addClass('animated fadeIn').css('animation-delay', '.9s');
+        $isAnimatedThird.eq(4).addClass('animated fadeIn').css('animation-delay', '1s');
+        $isAnimatedThird.eq(5).addClass('animated fadeIn').css('animation-delay', '1.1s');
+        $isAnimatedThird.eq(6).addClass('animated fadeIn').css('animation-delay', '1.2s');
+        $isAnimatedThird.eq(7).addClass('animated fadeIn').css('animation-delay', '1.3s');
+      }
+
       if (nextIndex === 5) {
         $isAnimatedFifth.eq(0).addClass('animated fadeIn').css('animation-delay', '.5s');
         $isAnimatedFifth.eq(1).addClass('animated fadeIn').css('animation-delay', '.7s');
@@ -89,9 +133,17 @@ $(document).ready(function() {
       }
 
       if (nextIndex === 5) {
-        updateScrollText('Scroll Up');
+        updateScrollText('Back to top');
+        updateScrollIndicatorUp();
+        addScrollTop();
       } else if (index === 5) {
         updateScrollText('Scroll Down');
+        addScrollDown();
+        if (nextIndex === 1) {
+          updateScrollIndicatorLight();
+        } else {
+          updateScrollIndicatorDark();
+        }
       }
     }
   });

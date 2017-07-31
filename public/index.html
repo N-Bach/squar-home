@@ -23,9 +23,9 @@
 
   <div class="scroll-indicator animated fadeInRight">
 
-    <img src="img/icon/ic-animated-scroll.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="srcollDown()">
+    <img src="img/icon/ic-animated-scroll.gif" alt="ic-scroll-down" id="scroll-down" onclick="scrollDown" class="pointer">
     <br/>
-    <span id="text-scroll-down" onclick="srcollDown()" class="pointer">Scroll down</span>
+    <span id="text-scroll-down" onclick="scrollDown" class="pointer">Scroll down</span>
   </div>
 
   <div id="mySidenav" class="sidenav">
@@ -75,39 +75,89 @@
 
 
       <div id="section2" class="section">
-        <div class="hero column">
-          <p class="about-us-header is-animated">about us.</p>
-          <p class="sub-header is-animated">
-            MySQUAR was started in June 2013, having identified a unique opportunity to <br /> launch social media applications
-            in the rapidly emerging Myanmar market. What <br/>began as a pioneering project to launch an open source social
-            app evolved into <br />our flagship product MyCHAT which launched in October 2014.
-          </p>
-          <span class="seperator is-animated">|</span>
-          <p class="sub-p is-animated">
-            The MySQUAR team is a group of dynamic, international and tech-savy designers, developers and <br /> engineers.
-            The Company is managed by a tech and financial-driven team with extensive experience in <br/>consumer technology
-            development, operations management and finance. Executive management has <br />been living and doing business
-            in Asia for many years.
-          </p>
+        <div class="hero">
+          <div class="column">
+            <p class="about-us-header is-animated">about us.</p>
+            <p class="sub-header is-animated">
+              MySQUAR was started in June 2013, having identified a unique opportunity to <br /> launch social media applications
+              in the rapidly emerging Myanmar market. What <br/>began as a pioneering project to launch an open source social
+              app evolved into <br />our flagship product MyCHAT which launched in October 2014.
+            </p>
+            <span class="seperator is-animated">|</span>
+            <p class="sub-p is-animated">
+              The MySQUAR team is a group of dynamic, international and tech-savy designers, developers and engineers. The Company is managed
+              by a tech and financial-driven team with extensive experience in consumer technology development, operations
+              management and finance. Executive management has been living and doing business in Asia for many years.
+            </p>
 
-          <img src="img/about-banner-1.jpg" alt="aboutus" class="about-us-pic is-animated">
+            <div class="about-us-pic is-animated"></div>
+          </div>
         </div>
       </div>
       <div id="section3" class="section">
         <div class="hero">
-          <img src="img/banner2.jpg" alt="mychat">
-          <div class="text">
+          <div class="column">
 
-            <span class="what-we-do-header">what we do.</span>
+            <div class="text">
 
-            <p class="what-we-do-sub-header">
-              MySQUAR is a leading consumer technology company <br />created to enrich the lives of people through a broad,
-              <br /> accessible and authentic online experience.
-            </p>
-            <p>We are the first social media provider focused solely on Myanmar <br />incorporating local culture and language
-              in all that we do. MySQUAR has <br />established a strong social media platform targeting mobile phone users
-              in <br />Myanmar with a large user base of over 7.5 million registered users as of <br />January 2017
-            </p>
+              <span class="title is-animated">what we do.</span>
+
+              <p class="body is-animated">
+                MySQUAR is a leading consumer technology company created to enrich the lives of people through a broad, accessible and authentic
+                online experience.
+              </p>
+            </div>
+
+            <div class="card-list">
+              <div class="card-row">
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-media.png" alt="Media">
+                    <p class="content-title">MEDIA</p>
+                    <p class="content-body">Connecting Myanmar through a social chat app and news aggregator.</p>
+                  </div>
+
+                </div>
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-entertainment.png" alt="Entertainment">
+                    <p class="content-title">ENTERTAINMENT</p>
+                    <p class="content-body">Mobile game publisher of hardcore and casual games localised for Myanmar. </p>
+                  </div>
+
+                </div>
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-fintech.png" alt="Fintech">
+                    <p class="content-title">FINTECH</p>
+                    <p class="content-body">Mobile app software development services for clients in the financial sector.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-row">
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-mobile-money.png" alt="Mobile Money">
+                    <p class="content-title">MOBILE MONEY</p>
+                    <p class="content-body">Coming soon</p>
+                  </div>
+                </div>
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-voip.png" alt="Voip">
+                    <p class="content-title">VOIP</p>
+                    <p class="content-body">Crystal clear and stable voice calls to over 190+ countries using internet connection.</p>
+                  </div>
+                </div>
+                <div class="card is-animated">
+                  <div class="card-content">
+                    <img src="img/icon/ic-commerce.png" alt="Commerce">
+                    <p class="content-title">MOBILE COMMERCE</p>
+                    <p class="content-body">A location-based marketplace for new and used products and services in Myanmar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -117,10 +167,10 @@
 
           <div class="hiring-text">
             <p class="title is-animated">we are <br /> hiring.</p>
-            <p class="body is-animated">Everyday, we wake up ready for a <br /> new challenge, that challenge is to <br /> deliver exceptional experiences,
-              <br /> connections and content to our <br /> users, without compromise.
+            <p class="body is-animated">Everyday, we wake up ready for a new challenge, that challenge is to deliver exceptional experiences, connections
+              and content to our users, without compromise.
               <br />
-              <br /> If you like the sound of that, then <br />we want to work with you!</p>
+              <br /> If you like the sound of that, then we want to work with you!</p>
           </div>
           <div class="jobs">
             <div class="row">
