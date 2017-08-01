@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "MyChat",
+      "description": "V2.3.1 released in May 2017"
+    },
+    {
+      "name": "My Hero - Bo Lattae",
+      "description": "Released in May 2017"
+    },
+    {
+      "name": "Lucky Wingabar",
+      "description": "Released in March 2017"
+    },
+    {
+      "name": "MyCombo",
+      "description": "Released in February 2017"
+    },
+    {
+      "name": "Hawk Hero",
+      "description": "Released in September 2016"
+    },
+    {
+      "name": "MyFish",
+      "description": "Released in August 2016"
+    },
+    {
+      "name": "MyFish",
+      "description": "Released in August 2016"
+    }
+  ]
+}

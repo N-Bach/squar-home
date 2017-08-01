@@ -17,13 +17,11 @@ function scrollTop() {
 }
 
 function addScrollDown() {
-  console.log('added to other page');
   $('#scroll-down').off('click').click(scrollDown);
   $('#text-scroll-down').off('click').click(scrollDown);
 }
 
 function addScrollTop() {
-  console.log('added to 5th page');
   $('#scroll-down').off('click').click(scrollTop);
   $('#text-scroll-down').off('click').click(scrollTop);
 }
@@ -75,11 +73,67 @@ function updateScrollIndicatorDark() {
   $('#text-scroll-down').css('color', 'black');
 }
 
+function setProductText(title, des) {
+  $('#pro-title').html(title);
+  $('#pro-des').html(des);
+}
+
+function setNavigator(casourel) {
+  $('#nav-left').click(casourel.prev);
+  $('#nav-right').click(casourel.next);
+}
+
+function setupCasourel() {
+  var carousel = $('.carousel').waterwheelCarousel({
+    autoPlay: 3000,
+    keyboardNav: true,
+    forcedImageWidth: 240,
+    forcedImageHeight: 600,
+    separation: 200,
+    opacityMultiplier: 0.9,
+    clickedCenter: function($clickedItem) {
+      // $clickedItem is a jQuery wrapped object describing the image that was clicked.
+      var imageUrl = $clickedItem.attr('alt');
+      console.log('The center image was just clicked. The URL of the image is: ' + imageUrl);
+
+      // var index = $clickedItem.attr('alt').split(' ');
+      // console.log('index of the picture is:', index);
+      // var product = details.products[index - 1];
+      // console.log(product);
+      // setProductText(product.name, product.description);
+    },
+    movedToCenter: function($newCenterItem) {
+      // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
+      var imageID = $newCenterItem.attr('alt'); // Get the HTML element "id" for this image. Let's say it's "tigerpicture"
+      // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
+      // $('#' + imageID + '-information').show(); // this will show the HTML element with id of "tigerpicture-information" on your site.
+      // console.log('The center image was just moved. The URL of the image is: ' + imageID);
+
+      var index = $newCenterItem.attr('alt').split(' ')[1];
+      console.log('index of the picture is:', index);
+      var product = details.products[index - 1];
+      console.log(product);
+      setProductText(product.name, product.description);
+    }
+  });
+  setNavigator(carousel);
+}
+
+var details;
+
+$.getJSON('js/products.json', function(json) {
+  details = json;
+});
+
 $(document).ready(function() {
   var $isAnimatedSecond = $('#section2 .is-animated');
   var $isAnimatedThird = $('#section3 .is-animated');
   var $isAnimatedFifth = $('#section5 .is-animated');
+  // console.log(details);
   addScrollDown();
+  setupCasourel();
+
+  // console.log(carousel);
   $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
