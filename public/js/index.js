@@ -91,28 +91,12 @@ function setupCasourel() {
     forcedImageHeight: 600,
     separation: 200,
     opacityMultiplier: 0.9,
-    clickedCenter: function($clickedItem) {
-      // $clickedItem is a jQuery wrapped object describing the image that was clicked.
-      var imageUrl = $clickedItem.attr('alt');
-      console.log('The center image was just clicked. The URL of the image is: ' + imageUrl);
-
-      // var index = $clickedItem.attr('alt').split(' ');
-      // console.log('index of the picture is:', index);
-      // var product = details.products[index - 1];
-      // console.log(product);
-      // setProductText(product.name, product.description);
-    },
+    clickedCenter: function($clickedItem) {},
     movedToCenter: function($newCenterItem) {
       // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
       var imageID = $newCenterItem.attr('alt'); // Get the HTML element "id" for this image. Let's say it's "tigerpicture"
-      // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
-      // $('#' + imageID + '-information').show(); // this will show the HTML element with id of "tigerpicture-information" on your site.
-      // console.log('The center image was just moved. The URL of the image is: ' + imageID);
-
       var index = $newCenterItem.attr('alt').split(' ')[1];
-      console.log('index of the picture is:', index);
       var product = details.products[index - 1];
-      console.log(product);
       setProductText(product.name, product.description);
     }
   });
