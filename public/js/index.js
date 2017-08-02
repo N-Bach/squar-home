@@ -126,12 +126,14 @@ $.getJSON('js/products.json', function(json) {
 });
 
 $(document).ready(function() {
+  var isCasourelUp = false;
   var $isAnimatedSecond = $('#section2 .is-animated');
   var $isAnimatedThird = $('#section3 .is-animated');
+  var $isAnimatedFourth = $('#section4 .is-animated');
   var $isAnimatedFifth = $('#section5 .is-animated');
   // console.log(details);
   addScrollDown();
-  setupCasourel();
+  // setupCasourel();
 
   // console.log(carousel);
   $('#fullpage').fullpage({
@@ -170,6 +172,16 @@ $(document).ready(function() {
         $isAnimatedThird.eq(5).addClass('animated fadeIn').css('animation-delay', '1.1s');
         $isAnimatedThird.eq(6).addClass('animated fadeIn').css('animation-delay', '1.2s');
         $isAnimatedThird.eq(7).addClass('animated fadeIn').css('animation-delay', '1.3s');
+      }
+
+      if (nextIndex === 4) {
+        if (!isCasourelUp) {
+          setupCasourel();
+          isCasourelUp = true;
+        }
+        $isAnimatedFourth.eq(0).addClass('animated fadeIn').css('animation-delay', '.5s');
+        $isAnimatedFourth.eq(1).addClass('animated fadeIn').css('animation-delay', '.75s');
+        $isAnimatedFourth.eq(2).addClass('animated fadeIn').css('animation-delay', '.85s');
       }
 
       if (nextIndex === 5) {
