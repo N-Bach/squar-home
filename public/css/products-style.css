@@ -17,21 +17,20 @@ body {
 
 .container {
   width: 100%;
-  height: 1200px;
+  height: 1260px;
   padding: 32px 0 32px 0;
   /* border: 2px solid red; */
   /* display: flex; */
   /* justify-content: center; */
-  background-image: url('../img/Bg-decoration.png');
+  background-image: url(../img/Bg-decoration.png);
   background-size: contain;
   background-color: #f0f5f7;
   position: relative;
 }
 
 .container .content {
-  /* padding-bottom: 16px;  */
   height: 100%;
-  width: 70%;
+  width: 79%;
   /* border: 2px dashed blue; */
   display: flex;
   align-content: center;
@@ -52,9 +51,9 @@ body {
 }
 
 .content .row .card {
-  height: 98%;
+  height: 100%;
   width: 32%;
-  margin: 0px 8px;
+  margin: 4px 10px;
   /* border: 2px dashed pink; */
   display: flex;
   flex-direction: column;
@@ -66,12 +65,17 @@ body {
 
 .card .cover {
   width: 100%;
-  height: 50%;
-  background-color: yellowgreen;
+  height: 52%;
+  /* background-color: yellowgreen; */
+}
+
+.card .cover img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card .app {
-  height: 50%;
+  height: 48%;
   /* width: 100%; */
   /* margin: 8px; */
   margin: 16px;
@@ -96,9 +100,9 @@ body {
 
 .card .app .description {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 23px;
+  line-height: 20px;
   text-align: left;
   color: rgba(30, 56, 79, 0.7);
   margin-bottom: 8px;
@@ -111,12 +115,21 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-top: 8px;
+  padding-top: 10px;
   /* padding-bottom: 8px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
-
+  align-content: center;
   border-top: solid 1px rgba(168, 186, 212, 0.34);
   /* border: 1px dotted brown; */
+}
+
+.card .app .version  img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
 }
 
 .container .scroll-indicator {
@@ -133,12 +146,14 @@ body {
 .scroll-indicator img {
   width: 24px;
   height: 60px;
+  cursor: pointer;
 }
 
-.scroll-indicator {
+.scroll-indicator span {
   font-size: 14px;
   font-weight: 300;
   color: #1e384f;
+  cursor: pointer;
 }
 
 footer {
