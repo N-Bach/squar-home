@@ -87,8 +87,8 @@ function setupCasourel() {
   var carousel = $('.carousel').waterwheelCarousel({
     autoPlay: 3000,
     keyboardNav: true,
-    forcedImageWidth: 240,
-    forcedImageHeight: 600,
+    // forcedImageWidth: 240,
+    // forcedImageHeight: 600,
     separation: 200,
     opacityMultiplier: 0.9,
     clickedCenter: function($clickedItem) {},
