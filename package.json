@@ -9,6 +9,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "express": "^4.15.3",
-    "fullpage.js": "^2.9.4"
+    "fullpage.js": "^2.9.4",
+    "swiper": "^3.4.2"
   }
 }

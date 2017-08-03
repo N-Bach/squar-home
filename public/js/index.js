@@ -85,12 +85,12 @@ function setNavigator(casourel) {
 
 function setupCasourel() {
   var carousel = $('.carousel').waterwheelCarousel({
-    autoPlay: 3000,
+    autoPlay: 1700,
     keyboardNav: true,
-    // forcedImageWidth: 240,
-    // forcedImageHeight: 600,
+    forcedImageWidth: 250,
+    forcedImageHeight: 460,
     separation: 200,
-    opacityMultiplier: 0.9,
+    opacityMultiplier: 1,
     clickedCenter: function($clickedItem) {},
     movedToCenter: function($newCenterItem) {
       // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
@@ -98,9 +98,32 @@ function setupCasourel() {
       var index = $newCenterItem.attr('alt').split(' ')[1];
       var product = details.products[index - 1];
       setProductText(product.name, product.description);
+    },
+    movedFromCenter: function($leavItem) {
+      $leavItem.css('filter', 'brightness(60%)');
     }
   });
+
   setNavigator(carousel);
+}
+
+function typeWriter(component, text, n) {
+  if (n < text.length) {
+    $(component).html(text.substring(0, n + 1));
+    n++;
+    setTimeout(function() {
+      typeWriter(component, text, n);
+    }, 80);
+  }
+}
+
+function typeSlogan() {
+  var connecting = $('#connect').data('text');
+  var myanmmar = $('#myanmar').data('text');
+  typeWriter('#connect', connecting, 0);
+  setTimeout(function() {
+    typeWriter('#myanmar', myanmmar, 0);
+  }, 1000);
 }
 
 var details;
@@ -110,6 +133,7 @@ $.getJSON('js/products.json', function(json) {
 });
 
 $(document).ready(function() {
+  typeSlogan();
   var isCasourelUp = false;
   var $isAnimatedSecond = $('#section2 .is-animated');
   var $isAnimatedThird = $('#section3 .is-animated');
@@ -164,8 +188,11 @@ $(document).ready(function() {
           isCasourelUp = true;
         }
         $isAnimatedFourth.eq(0).addClass('animated fadeIn').css('animation-delay', '.5s');
-        $isAnimatedFourth.eq(1).addClass('animated fadeIn').css('animation-delay', '.75s');
-        $isAnimatedFourth.eq(2).addClass('animated fadeIn').css('animation-delay', '.85s');
+        $isAnimatedFourth.eq(1).addClass('animated fadeIn').css('animation-delay', '.7s');
+        $isAnimatedFourth.eq(2).addClass('animated fadeIn').css('animation-delay', '.7s');
+        $isAnimatedFourth.eq(3).addClass('animated fadeIn').css('animation-delay', '1s');
+        $isAnimatedFourth.eq(4).addClass('animated fadeIn').css('animation-delay', '1s');
+        $isAnimatedFourth.eq(5).addClass('animated fadeIn').css('animation-delay', '1.3s');
       }
 
       if (nextIndex === 5) {

@@ -38,6 +38,7 @@
 }
 #section4 {
   background: url('../img/bg-our-products.png');
+  overflow: hidden;
 }
 #section5 {
 }
@@ -174,7 +175,7 @@
 }
 
 #section2 .sub-header {
-  margin: 16px 0px 16px 0px;
+  margin: 16px 0px 8px 0px;
   width: 100%;
   font-size: 20px;
   font-weight: 300;
@@ -186,7 +187,7 @@
 #section2 .seperator {
   font-size: 1.8em;
   margin-top: 6px;
-  margin-bottom: 6px;
+  /* margin-bottom: 4px; */
   font-weight: lighter;
   color: #f4df9d;
 }
@@ -199,11 +200,12 @@
   /* font-weight: 300; */
   letter-spacing: 0.1px;
   margin-bottom: 40px;
+  margin-top: 16px;
   color: #1e384f;
 }
 
 .about-us-pic {
-  background-image: url('../img/about-banner-1.jpg');
+  background-image: url('../img/about-us.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -224,7 +226,7 @@
 }
 
 .spin-circle-animate {
-  -webkit-animation-delay: 0.8s;
+  -webkit-animation-delay: 1.3s;
   -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.8s;
   -moz-animation-iteration-count: 1;
@@ -376,7 +378,7 @@
 }
 
 #section5 .hero .jobs {
-  height: 100%;
+  height: 100vh;
   width: 42%;
 }
 
@@ -468,7 +470,7 @@
   line-height: 24px;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.4px;
   color: rgba(30, 56, 79, 0.6);
   opacity: 0.7;
   width: 53%;
@@ -484,6 +486,7 @@
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
+  max-height: 420px;
 }
 
 #section3 .card-list .card-row {
@@ -659,7 +662,7 @@
 #section4 .hero .products {
   /* border: 2px dotted red; */
   /* margin-top: 16px; */
-  /* height: 100%; */
+  /* height: 34400%; */
   width: 100%;
   /* max-height: 63%; */
   align-self: flex-end;
@@ -678,28 +681,40 @@
   display: flex;
   margin-top: 12px;
   margin-bottom: 12px;
+  flex-grow: 0;
 }
 
 #section4 .hero .products .navigator .arrow {
   width: 36px;
   height: 36px;
-  border: 2px solid #e4b315;
-  border-radius: 50%;
+  /* border: 2px solid #e4b315; */
+  /* border-radius: 50%; */
   /* color: #e4b315; */
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
   margin: 8px;
-  text-align: center;
-  flex-grow: 0;
+  /* text-align: center; */
+  outline: 0;
+  /* background: none; */
 }
 
+#section4 .left {
+  background-image: url('../img/icon/ic-previous.png');
+  /* background-size: 100% 100%; */
+}
+
+#section4 .right {
+  background-image: url('../img/icon/ic-next.png');
+  /* background-size: 100% 100%; */
+}
+/*
 #section4 .hero .products .navigator .arrow:focus {
   outline: 0;
-}
+} */
 
 #section4 .hero .products .product {
   display: inline-block;
-  padding: 4px 8px;
-  margin: 0 32px;
+  padding: 4px 0px;
+  margin: 0 18px;
   width: 20%;
 }
 
@@ -716,23 +731,6 @@
   font-weight: 300;
   letter-spacing: 0.1px;
   color: rgba(30, 56, 79, 0.5);
-}
-
-i {
-  border: solid #e4b315;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
 }
 
 #section4 .products .carousel {
@@ -756,28 +754,97 @@ i {
   /* justify-content: center; */
 }
 
-#section4 .carousel {
+/* #section4 .carousel {
   margin: 0 auto;
   width: 100%;
-  /* height: 100%; */
   flex-grow: 1;
-  /* display: relative; */
-  /* border: 2px solid green; */
+   display: relative;
+   border: 2px solid green;
   overflow: hidden;
-}
-#section4  .carousel img {
+} */
+
+#section4  .carousel .app-pic {
   display: hidden; /* hide images until carousel prepares them */
   cursor: pointer; /* not needed if you wrap carousel items in links */
+  filter: brightness(50%);
+  transition: -webkit-filter 0.05s ease-in;
 }
 
-#section4 .view-port {
-  /* justify-content: center; */
-  /* background-image: url('../img/android-mockup.png'); */
-  /* background-size: contain; */
-  /* max-width: 100%; */
+#section4 .carousel div {
 }
 
-#section4 .view-port img {
-  display: block;
+#section4 .carousel-center {
+  filter: brightness(100%) !important;
+}
+
+#section4 .carousel .carousel-center:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../img/android-mockup.png');
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+/* #section4 .products .products-list {
+  border: 2px dashed blue;
+  margin-top: 12px;
+  padding-top: 8px;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#section4 .products-list .carousel {
   margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid green;
+} */
+
+#section4 .swiper-container {
+  width: 80%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+#section4 .swiper-container .swiper-wrapper {
+  /* justify-content: center; */
+  /* overflow: hidden; */
+}
+
+#section4 .swiper-slide {
+  width: 350px;
+  overflow: hidden;
+  /* justify-content: center; */
+}
+
+#section4 .swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#section4 .android-phone {
+  content: "";
+  position: absolute;
+  background-image: url('../img/android-mockup.png');
+  background-size: 100% 100%;
+  z-index: 20;
+  display: none;
+}
+
+#section4 .phone {
+  background-image: url('../img/android-mockup.png');
+  background-size: 100% 100%;
+  height: 100%;
+  z-index: 20;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 20;
 }
