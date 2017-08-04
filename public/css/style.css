@@ -11,6 +11,10 @@
   z-index: 10;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   src: url('GillSans.ttc');
@@ -600,9 +604,15 @@
   background: none;
   cursor: pointer;
 }
+#section4 .hero .column .btn-explore a {
+  color: #1e384f;
+}
+
+#section4 .hero .column .btn-explore:hover a {
+  color: white;
+}
 
 #section4 .hero .column .btn-explore:hover {
-  color: white;
   border-color: #e4b315;
 }
 

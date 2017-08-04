@@ -1,3 +1,44 @@
+var details = {
+  products: [
+    {
+      name: 'MyChat',
+      description: 'V2.3.1 released in May 2017'
+    },
+    {
+      name: 'CalllHome',
+      description: 'V1.3 released in July 2017'
+    },
+    {
+      name: 'FastSell',
+      description: 'V1 released in December 2016'
+    },
+    {
+      name: 'My Hero - Bo Lattae',
+      description: 'Released in May 2017'
+    },
+    {
+      name: 'Lucky Wingabar',
+      description: 'Released in March 2017'
+    },
+    {
+      name: 'MyCombo',
+      description: 'Released in February 2017'
+    },
+    {
+      name: 'Hawk Hero',
+      description: 'Released in September 2016'
+    },
+    {
+      name: 'MyFish',
+      description: 'Released in August 2016'
+    },
+    {
+      name: 'Land Of Magic',
+      description: 'Comming soon'
+    }
+  ]
+};
+
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById('mySidenav').style.width = '350px';
@@ -125,12 +166,6 @@ function typeSlogan() {
     typeWriter('#myanmar', myanmmar, 0);
   }, 1000);
 }
-
-var details;
-
-$.getJSON('js/products.json', function(json) {
-  details = json;
-});
 
 // close nav bar when clicking out side of the nav
 function setNavBehavior() {
