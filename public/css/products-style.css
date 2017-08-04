@@ -6,13 +6,161 @@ body {
   margin: 0;
 }
 
-.logo {
+#hamburger {
   position: fixed;
+  top: 38px;
+  right: 38px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 110; /* Stay on top */
+  top: 0;
+  right: 0;
+  /* background-color: #111;  Black */
+  background-image: url('../img/bg.jpg');
+  background-size: 100% 100%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /* padding-top: 60px;  Place content 60px from the top  */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .page-link a {
+  text-decoration: none;
+  /* color: #818181; */
+  color: white;
+  font-size: 2em;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .page-link a span {
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .page-link a:hover,
+.offcanvas .page-link a:focus {
+  border-left: 6px solid white;
+}
+
+.sidenav .page-link a span:hover,
+.offcanvas .page-link a span:focus {
+  opacity: 0.6;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  font-size: 36px;
+  margin-left: 50px;
+  top: 38px;
+  right: 40px;
+  cursor: pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#mySidenav footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+#mySidenav .social-link {
+  padding: 8px 16px;
+}
+
+#mySidenav .social-link  a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s;
+}
+
+#mySidenav .social-link  a:hover {
+  opacity: 0.6;
+}
+
+#mySidenav .social-link img {
+  margin-right: 4px;
+  height: 32px;
+  width: 32px;
+}
+
+#mySidenav footer span {
+  color: white;
+  font-size: 14px;
+  margin: 8px 16px;
+}
+
+#mySidenav .page-link {
+  margin-top: 130px;
+}
+
+#mySidenav .page-link a {
+  padding: 8px 8px 16px 32px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.logo {
+  position: absolute;
   top: 30px;
   left: 30px;
   width: 56px;
   height: 56px;
   z-index: 10;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background-image: url('../img/bg-products.jpg');
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .text {
+  margin: 154px auto 18px auto;
+  display: flex;
+  bottom: 40px;
+  flex-direction: column;
+}
+
+.header .text .title {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 2.1px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.header .text .body {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tabs {
+  height: 62px;
+  background-color: white;
 }
 
 .container {
@@ -156,7 +304,7 @@ body {
   cursor: pointer;
 }
 
-footer {
+.product-footer {
   height: 48px;
   display: flex;
   justify-content: center;
@@ -165,7 +313,7 @@ footer {
   background-color: #1e384f;
 }
 
-footer span {
+.product-footer span {
   font-size: 16px;
   text-align: center;
   color: #ffffff;

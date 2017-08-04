@@ -1,0 +1,252 @@
+* {
+  font-family: 'Gill Sans';
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#hamburger {
+  position: fixed;
+  top: 38px;
+  right: 38px;
+  z-index: 10;
+}
+
+#hamburger img {
+  width: 28px;
+  height: 21px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 110; /* Stay on top */
+  top: 0;
+  right: 0;
+  /* background-color: #111;  Black */
+  background-image: url('../img/bg.jpg');
+  background-size: 100% 100%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /* padding-top: 60px;  Place content 60px from the top  */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .page-link a {
+  text-decoration: none;
+  /* color: #818181; */
+  color: white;
+  font-size: 2em;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .page-link a span {
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .page-link a:hover,
+.offcanvas .page-link a:focus {
+  border-left: 6px solid white;
+}
+
+.sidenav .page-link a span:hover,
+.offcanvas .page-link a span:focus {
+  opacity: 0.6;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  font-size: 36px;
+  margin-left: 50px;
+  top: 38px;
+  right: 40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#mySidenav footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+#mySidenav .social-link {
+  padding: 8px 16px;
+}
+
+#mySidenav .social-link  a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s;
+}
+
+#mySidenav .social-link  a:hover {
+  opacity: 0.6;
+}
+
+#mySidenav .social-link img {
+  margin-right: 4px;
+  height: 32px;
+  width: 32px;
+}
+
+#mySidenav footer span {
+  color: white;
+  font-size: 14px;
+  margin: 8px 16px;
+}
+
+#mySidenav .page-link {
+  margin-top: 130px;
+}
+
+#mySidenav .page-link a {
+  padding: 8px 8px 16px 32px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-image: url('../img/contactus/bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  margin: auto auto;
+  height: 500px;
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .title {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: left;
+  animation-delay: .3s;
+}
+
+.content .email {
+  border-top: dashed 1px rgba(165, 165, 165, 0.6);
+  border-bottom: dashed 1px rgba(165, 165, 165, 0.6);
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 300;
+  animation-delay: .7s;
+}
+
+.content .email span {
+  color: #e4b315;
+}
+
+.content .social-link {
+  margin: 32px 0 32px 0;
+  animation-delay: .9s;
+}
+
+.content .social-link img {
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  transition: 0.2s;
+}
+
+.content .social-link img:hover {
+  opacity: 0.6;
+}
+
+.content .policy {
+  height: 43px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  animation-delay: 1s;
+}
+
+.spacer {
+  margin: 0 64px;
+}
+
+.content .copyright {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.1px;
+  text-align: center;
+  animation-delay: 1.1s;
+}
+
+.content .offices {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 42px;
+  margin-top: 48px;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+.office {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.content .offices .vn-office {
+  width: 290px;
+  display: inline;
+  margin-right: 42px;
+  animation-delay: .5s;
+}
+
+.content .offices .my-office {
+  width: 330px;
+  display: inline;
+  animation-delay: .6s;
+}
+
+.address {
+  opacity: 0.6;
+}
+
+.logo {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 56px;
+  height: 56px;
+  z-index: 10;
+}

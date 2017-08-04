@@ -725,6 +725,7 @@ a {
   cursor: pointer; /* not needed if you wrap carousel items in links */
   filter: brightness(50%);
   transition: -webkit-filter 0.05s ease-in;
+  border-radius: 8px;
 }
 
 #section4 .carousel div {

@@ -16,6 +16,10 @@ app.get('/products', (req, res) => {
   res.sendFile(path.join(publicPath + '/products.html'));
 });
 
+app.get('/contactus', (req, res) => {
+  res.sendFile(path.join(publicPath + '/contactus.html'));
+});
+
 app.listen(PORT, () => {
   console.log('Server is listenning at', PORT);
 });
