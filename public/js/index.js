@@ -132,7 +132,22 @@ $.getJSON('js/products.json', function(json) {
   details = json;
 });
 
+// close nav bar when clicking out side of the nav
+function setNavBehavior() {
+  $(document).click(function(e) {
+    var sidenav = $('#mySidenav');
+    if (
+      e.target.id !== 'ic-hamburger' &&
+      !sidenav.is(e.target) &&
+      sidenav.has(e.target).length === 0
+    ) {
+      closeNav();
+    }
+  });
+}
+
 $(document).ready(function() {
+  setNavBehavior();
   typeSlogan();
   var isCasourelUp = false;
   var $isAnimatedSecond = $('#section2 .is-animated');
