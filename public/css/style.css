@@ -434,7 +434,7 @@ a {
 #section3 .hero .column {
   display: flex;
   flex-direction: column;
-  max-width: 78%;
+  max-width: 82%;
   height: 100%;
   width: 100%;
   /* border: 2px solid red; */
@@ -487,6 +487,7 @@ a {
   margin-top: 12px;
   margin-bottom: 12px;
   text-align: left;
+  justify-content: center;
 }
 
 #section3 .card-list .card {
