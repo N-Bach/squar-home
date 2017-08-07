@@ -255,9 +255,17 @@ a {
   color: white;
   width: 400px;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 40px;
   letter-spacing: 0.7px;
+}
+
+#connect {
+  font-size: 30px;
+}
+
+#myanmar {
+  font-size: 50px;
 }
 
 .scroll-indicator {
@@ -681,7 +689,7 @@ a {
   display: inline-block;
   padding: 4px 0px;
   margin: 0 18px;
-  width: 20%;
+  width: 250px;
 }
 
 #section4 .product .title {

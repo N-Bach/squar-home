@@ -5,7 +5,7 @@ var details = {
       description: 'V2.3.1 released in May 2017'
     },
     {
-      name: 'CalllHome',
+      name: 'CallHome',
       description: 'V1.3 released in July 2017'
     },
     {
@@ -37,6 +37,8 @@ var details = {
       description: 'Comming soon'
     }
   ]
+
+  // MyCat, callhome, fastsell, land of magic, mingalabar
 };
 
 /* Set the width of the side navigation to 250px */
