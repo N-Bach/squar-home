@@ -20,6 +20,18 @@ app.get('/contactus', (req, res) => {
   res.sendFile(path.join(publicPath + '/contactus.html'));
 });
 
+app.get('/community-standards', (req, res) => {
+  res.sendFile(path.join(publicPath + '/community.html'));
+});
+
+app.get('/privacy', (req, res) => {
+  res.sendFile(path.join(publicPath + '/privacy.html'));
+});
+
+app.get('/terms-of-service', (req, res) => {
+  res.sendFile(path.join(publicPath + '/terms.html'));
+});
+
 app.listen(PORT, () => {
   console.log('Server is listenning at', PORT);
 });
