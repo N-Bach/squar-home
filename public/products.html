@@ -15,13 +15,13 @@
     <img src="img/icon/ic-menu.png" alt="sidenav" id="ic-hamburger" />
   </span>
   <div id="mySidenav" class="sidenav">
-    <img src="img/icon/ic-close.png" alt="Close" class="closebtn" onclick="closeNav()">
+    <img src="img/icon/ic-close.png" alt="Close" class="closebtn pointer" onclick="closeNav()">
 
     <div class="page-link">
-      <a href="/products"><span>Our Products</span></a>
-      <a href="#"><span>We Are Hiring</span></a>
-      <a href="#"><span>For Investors</span></a>
-      <a href="/contactus"><span>Contact Us</span></a>
+      <a href="/products" target="_blank"><span>Our Products</span></a>
+      <a href="https://careers.mysquar.com/" target="_blank"><span>We Are Hiring</span></a>
+      <a href="http://investors.mysquar.com/" target="_blank"><span>For Investors</span></a>
+      <a href="/contactus " target="_blank"><span>Contact Us</span></a>
     </div>
 
     <footer>
@@ -43,27 +43,27 @@
       <span class="body">We make something you love</span>
     </div>
   </div>
-
+  <!--
   <div class="tabs">
 
-  </div>
+  </div> -->
 
   <div class="container">
 
     <div class="scroll-indicator">
 
-      <img src="img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer">
-      <span id="text-scroll-down" class="pointer">Back to Top</span>
+      <img src="img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="topFunction()">
+      <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
     </div>
 
     <div class="content products-all">
       <div class="row">
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/MyChat.jpg" alt="MyChat" />
+            <a href="http://mychat.mysquar.com/" target="_blank"><img src="img/games-apps/MyChat.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">MyChat</div>
+            <div class="name"><a href="http://mychat.mysquar.com/" target="_blank">MyChat</a></div>
             <div class="description">A chat app built solely for Myanmar. MyChat brings you a fast and reliable chat experience that is smooth even
               on low end devices and flaky cellular networks.</div>
             <div class="version">
@@ -73,11 +73,11 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/CallHome.jpg" alt="MyChat" />
+            <a href="http://callhome.mysquar.com/" target="_blank"><img src="img/games-apps/CallHome.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
 
-            <div class="name">CallHome</div>
+            <div class="name"> <a href="http://callhome.mysquar.com/" target="_blank">CallHome</a></div>
             <div class="description">A VOIP app that lets you stay in touch with friends and family at affordable rates, even if they don't have the
               app installed!</div>
             <div class="version">
@@ -87,10 +87,10 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/FastSell.jpg" alt="MyChat" />
+            <a href="https://fastsell.com.mm/" target="_blank"><img src="img/games-apps/FastSell.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">FastSell</div>
+            <div class="name"> <a href="https://fastsell.com.mm/" target="_blank">FastSell</a></div>
             <div class="description">A peer-to-peer marketplace, allowing people to trade with other people nearby.</div>
             <div class="version">
               <img src="img/icon/ic-update.png" alt="latest"> V1 released in December 2016
@@ -101,10 +101,10 @@
       <div class="row">
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/MM.jpg" alt="MyChat" />
+            <a href="http://mingalarbarmorning.com/" target="_blank"><img src="img/games-apps/MM.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">Mingalarbar Morning</div>
+            <div class="name"> <a href="http://mingalarbarmorning.com/" target="_blank">Mingalarbar Morning</a></div>
             <div class="description">Mingalarbar Morning is a free access news portal delivers latest breaking news and top stories updates in Myanmar
               and across the World. </div>
             <div class="version">
@@ -114,10 +114,10 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/MyHero.jpg" alt="MyChat" />
+            <a href="http://myheromm.com/" target="_blank"><img src="img/games-apps/MyHero.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">My Hero - Bo Lattae</div>
+            <div class="name"> <a href="http://myheromm.com/" target="_blank">My Hero - Bo Lattae</a></div>
             <div class="description">One of the very first role-playing shooter (RPS) games in Myanmar with a variety of famous Heroes within an adventurous
               fantasy world.</div>
             <div class="version">
@@ -127,10 +127,10 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/LuckyWingabar.jpg" alt="MyChat" />
+            <a href="http://luckywingabar.com/" target="_blank"><img src="img/games-apps/LuckyWingabar.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">Lucky Wingabar</div>
+            <div class="name"><a href="http://luckywingabar.com/" target="_blank">Lucky Wingabar</a></div>
             <div class="description">A luxury casino gaming experience where you can enjoy a variety of games such as: shan koe mee, poker show, blackjack
               and join weekly tournaments.</div>
             <div class="version">
@@ -142,10 +142,10 @@
       <div class="row">
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/MyCombo.jpg" alt="MyChat" />
+            <a href="http://mycombomm.com/" target="_blank"><img src="img/games-apps/MyCombo.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">MyCombo</div>
+            <div class="name"><a href="http://mycombomm.com/" target="_blank">MyCombo</a></div>
             <div class="description">A role playing combat game that will blow your mind with its unique fighting combinations. Choose from among
               50 warriors and 300 skills. Become a champion.</div>
             <div class="version">
@@ -155,10 +155,10 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/MyFish.jpg" alt="MyChat" />
+            <a href="http://myfishmm.com/" target="_blank"><img src="img/games-apps/MyFish.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">MyFish</div>
+            <div class="name"><a href="http://myfishmm.com/" target="_blank">MyFish</a></div>
             <div class="description">One of the first mobile games in Myanmar inspired by a popular arcade fishing game. Catch as many fish and sea
               creatures as you can!</div>
             <div class="version">
@@ -168,10 +168,10 @@
         </div>
         <div class="card">
           <div class="cover">
-            <img src="img/games-apps/HawkHero.jpg" alt="MyChat" />
+            <a href="http://hawkheromm.com/" target="_blank"><img src="img/games-apps/HawkHero.jpg" alt="MyChat" /></a>
           </div>
           <div class="app">
-            <div class="name">Hawk Hero</div>
+            <div class="name"><a href="http://hawkheromm.com/" target="_blank">Hawk Hero</a></div>
             <div class="description">The first epic martial arts game available on mobile for Myanmar, bringing a truly immersive role playing game
               (RPG) experience to your phone.</div>
             <div class="version">
