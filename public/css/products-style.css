@@ -14,6 +14,10 @@ body {
   cursor: pointer;
 }
 
+.tabcontent {
+  display: none;
+}
+
 .breadcrum-container {
   position: absolute;
   top: 30px;
@@ -232,12 +236,12 @@ ul.breadcrumb li a:hover {
 
 .sticky-sidenav {
   position: fixed !important;
-  top: 20px !important;
-  right: 36px !important;
+  top: 18px !important;
+  right: 38px !important;
 }
 
 .tabs {
-  height: 62px;
+  height: 56px;
   width: 100%;
   background-color: white;
   box-sizing: border-box;
@@ -256,13 +260,30 @@ ul.breadcrumb li a:hover {
 }
 
 .tab-button button {
-  padding: 16px 32px;
+  padding: 16px 0px;
   margin: 0 8px;
+  outline: 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #1e384f;
+  transition: 0.2s;
+  height: 100%;
+  font-weight: 400;
+}
+
+.tab-button button:hover {
+  color: #e4b315;
+}
+
+.tab-button button.active {
+  color: #e4b315;
+  border-bottom: 4px solid #e4b315;
 }
 
 .container {
   width: 100%;
-  height: 1260px;
+  height: 1278px;
   padding: 32px 0 32px 0;
   /* border: 2px solid red; */
   /* display: flex; */
@@ -271,6 +292,7 @@ ul.breadcrumb li a:hover {
   background-size: contain;
   background-color: #f0f5f7;
   position: relative;
+  box-sizing: content-box;
 }
 
 .container .content {
@@ -291,6 +313,7 @@ ul.breadcrumb li a:hover {
   /* border: 2px solid green; */
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-around;
 }
