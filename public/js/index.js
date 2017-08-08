@@ -2,43 +2,45 @@ var details = {
   products: [
     {
       name: 'MyChat',
-      description: 'V2.3.1 released in May 2017'
+      description: 'Chat app & more'
     },
     {
-      name: 'CallHome',
-      description: 'V1.3 released in July 2017'
+      name: 'Mingalarbar Morning',
+      description: 'News aggregator'
     },
     {
       name: 'FastSell',
-      description: 'V1 released in December 2016'
+      description: 'Marketplace app'
     },
     {
-      name: 'My Hero - Bo Lattae',
-      description: 'Released in May 2017'
-    },
-    {
-      name: 'Lucky Wingabar',
-      description: 'Released in March 2017'
-    },
-    {
-      name: 'MyCombo',
-      description: 'Released in February 2017'
-    },
-    {
-      name: 'Hawk Hero',
-      description: 'Released in September 2016'
-    },
-    {
-      name: 'MyFish',
-      description: 'Released in August 2016'
+      name: 'CallHome',
+      description: 'VOIP app'
     },
     {
       name: 'Land Of Magic',
       description: 'Comming soon'
+    },
+    {
+      name: 'My Hero - Bo Lattae',
+      description: 'Third-person shooter game'
+    },
+    {
+      name: 'Lucky Wingabar',
+      description: 'Casino games'
+    },
+    {
+      name: 'MyCombo',
+      description: 'Combat game'
+    },
+    {
+      name: 'Hawk Hero',
+      description: 'Martial arts game'
+    },
+    {
+      name: 'MyFish',
+      description: 'Fish hunting game'
     }
   ]
-
-  // MyCat, callhome, fastsell, land of magic, mingalabar
 };
 
 /* Set the width of the side navigation to 250px */
