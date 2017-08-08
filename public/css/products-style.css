@@ -18,6 +18,7 @@ body {
   position: absolute;
   top: 30px;
   left: 153px;
+  z-index: 10;
 }
 
 /* Style the list */
@@ -31,12 +32,14 @@ ul.breadcrumb {
 ul.breadcrum .ic-home {
   width: 23px;
   height: 20px;
+  display: block;
+  margin: auto;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   text-align: center;
   color: #ffffff;
@@ -205,10 +208,56 @@ ul.breadcrumb li a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.sticky {
+  position: fixed !important;
+  top: 0;
+}
+
+.sticky-crumb {
+  position: fixed !important;
+  top: 16px;
+  left: 32px;
+}
+
+.sticky-crumb  li {
+  color: #1e384f !important;
+}
+
+.sticky-crumb li + li:before {
+  content: url('../img/icon/ic-arrow.png') !important;
+}
+
+.sticky-crumb li:first-child {
+}
+
+.sticky-sidenav {
+  position: fixed !important;
+  top: 20px !important;
+  right: 36px !important;
+}
+
 .tabs {
   height: 62px;
+  width: 100%;
   background-color: white;
   box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.tabs .tab-button {
+  font-size: 16px;
+  color: #1e384f;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tab-button button {
+  padding: 16px 32px;
+  margin: 0 8px;
 }
 
 .container {

@@ -52,8 +52,12 @@
     </div>
   </div>
 
-  <div class="tabs">
-    hi there
+  <div id="nav" class="tabs">
+    <div class="tab-button">
+      <button>ALL</button>
+      <button>GAMES</button>
+      <button>APPS</button>
+    </div>
   </div>
 
   <div class="container">
@@ -64,7 +68,7 @@
       <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
     </div>
 
-    <div class="content products-all">
+    <div class="content products-all tabcontent" id="all">
       <div class="row">
         <div class="card">
           <div class="cover">
@@ -189,13 +193,21 @@
       </div>
 
     </div>
+
+    <div class="tabcontent" id="games">
+      this is tab 2
+    </div>
+
+    <div class="tabcontent" id="apps">
+      this is tab 3
+    </div>
   </div>
 
   <footer class="product-footer">
     <span>© 2017 SQUAR PTE LTD. All Rights Reserved.</span>
   </footer>
 
-
+  <script type="text/javascript " src="js/vendor/jquery.min.js "></script>
   <script type="text/javascript " src="js/products-index.js "></script>
 </body>
 
