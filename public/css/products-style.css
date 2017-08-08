@@ -14,6 +14,53 @@ body {
   cursor: pointer;
 }
 
+.breadcrum-container {
+  position: absolute;
+  top: 30px;
+  left: 153px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  margin: 0;
+}
+
+ul.breadcrum .ic-home {
+  width: 23px;
+  height: 20px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 0 8px;
+  color: black;
+  content: url('../img/icon/ic-arrow-white.png'); /* with class ModalCarrot ??*/
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #e4b315;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -161,6 +208,7 @@ body {
 .tabs {
   height: 62px;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .container {
