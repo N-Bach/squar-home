@@ -26,11 +26,13 @@ function makeHamburgerSticky() {
 }
 
 function makeHamburgerNotSticky() {
+  console.log('making breacrum not sticky');
   hamburger.removeClass('sticky-sidenav');
   $('#ic-hamburger').attr('src', 'img/icon/ic-menu.png');
 }
 
 function makeBreadcrumbSticky() {
+  console.log('making breacrum sticky');
   breadcrumb.addClass('sticky-crumb');
   $('.ic-home').attr('src', 'img/icon/ic-home.png');
 }
@@ -65,7 +67,23 @@ $(window).scroll(function() {
   }
 });
 
-function openCity(evt, cityName) {
+function setAnimate(tabName) {
+  var element = $('#' + tabName + ' .is-animated');
+  var animationDelay = ['.1s', '.3s', '.4s'];
+
+  element.map(function(item, index) {});
+  if (element.eq(0).hasClass('animated')) {
+    element.map(function(index, item) {
+      element.eq(index).removeClass('fadeIn');
+    });
+  } else {
+    element.map(function(index, item) {
+      element.eq(index).addClass('animated fadeIn').css('animation-delay', animationDelay[index]);
+    });
+  }
+}
+
+function openCity(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -82,6 +100,25 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = 'block';
+  document.getElementById(tabName).style.display = 'block';
+  setAnimate(tabName);
   evt.currentTarget.className += ' active';
 }
+
+// close nav bar when clicking out side of the nav
+function setNavBehavior() {
+  $(document).click(function(e) {
+    var sidenav = $('#mySidenav');
+    if (
+      e.target.id !== 'ic-hamburger' &&
+      !sidenav.is(e.target) &&
+      sidenav.has(e.target).length === 0
+    ) {
+      closeNav();
+    }
+  });
+}
+
+$(document).ready(function() {
+  setNavBehavior();
+});
