@@ -291,7 +291,7 @@ ul.breadcrumb li a:hover {
 
 .container {
   width: 100%;
-  height: 1278px;
+  /* height: 1278px; */
   padding: 32px 0 32px 0;
   /* border: 2px solid red; */
   /* display: flex; */
@@ -300,17 +300,17 @@ ul.breadcrumb li a:hover {
   background-size: contain;
   background-color: #f0f5f7;
   position: relative;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .container .content {
-  height: 100%;
-  width: 79%;
+  /*height: 100%; */
+  width: 80%;
   /* border: 2px dashed blue; */
   display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: column;
+  /* align-content: center; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
   margin: 0 auto;
 }
 
@@ -322,13 +322,13 @@ ul.breadcrumb li a:hover {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: space-around;
+  /* align-items: center; */
+  justify-content: flex-start;
 }
 
 .content .row .card {
-  height: 100%;
-  width: 32%;
+  height: 418px;
+  width: 316px;
   margin: 4px 10px;
   /* border: 2px dashed pink; */
   display: flex;
@@ -337,11 +337,12 @@ ul.breadcrumb li a:hover {
   background-color: #ffffff;
   box-shadow: 5px 5px 13px 0 rgba(168, 179, 188, 0.15);
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .card .cover {
   width: 100%;
-  height: 52%;
+  height: 250px;
   overflow: hidden;
 }
 
