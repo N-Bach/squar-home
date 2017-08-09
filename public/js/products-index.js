@@ -26,13 +26,11 @@ function makeHamburgerSticky() {
 }
 
 function makeHamburgerNotSticky() {
-  console.log('making breacrum not sticky');
   hamburger.removeClass('sticky-sidenav');
   $('#ic-hamburger').attr('src', 'img/icon/ic-menu.png');
 }
 
 function makeBreadcrumbSticky() {
-  console.log('making breacrum sticky');
   breadcrumb.addClass('sticky-crumb');
   $('.ic-home').attr('src', 'img/icon/ic-home.png');
 }
@@ -119,6 +117,7 @@ function setNavBehavior() {
   });
 }
 
+document.getElementById('defaultOpen').click();
 $(document).ready(function() {
   setNavBehavior();
 });
