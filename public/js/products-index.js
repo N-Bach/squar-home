@@ -20,26 +20,48 @@ var container = $('.container');
 var breadcrumb = $('.breadcrum-container');
 var hamburger = $('#hamburger');
 
+function makeHamburgerSticky() {
+  hamburger.addClass('sticky-sidenav');
+  $('#ic-hamburger').attr('src', 'img/icon/ic-menu-dark.png');
+}
+
+function makeHamburgerNotSticky() {
+  hamburger.removeClass('sticky-sidenav');
+  $('#ic-hamburger').attr('src', 'img/icon/ic-menu.png');
+}
+
+function makeBreadcrumbSticky() {
+  breadcrumb.addClass('sticky-crumb');
+  $('.ic-home').attr('src', 'img/icon/ic-home.png');
+}
+
+function makeBreadcrumbNotSticky() {
+  breadcrumb.removeClass('sticky-crumb');
+  $('.ic-home').attr('src', 'img/icon/ic-home-white.png');
+}
+
+function makeSticky() {
+  nav.addClass(sticky);
+  container.css('margin-top', '62px');
+
+  makeBreadcrumbSticky();
+  makeHamburgerSticky();
+}
+
+function makeNotSticky() {
+  nav.removeClass(sticky);
+  container.css('margin-top', '0px');
+
+  makeBreadcrumbNotSticky();
+  makeHamburgerNotSticky();
+}
+
 // sticky nav
 $(window).scroll(function() {
   if ($(this).scrollTop() > header) {
-    nav.addClass(sticky);
-    container.css('margin-top', '62px');
-
-    breadcrumb.addClass('sticky-crumb');
-    $('.ic-home').attr('src', 'img/icon/ic-home.png');
-
-    hamburger.addClass('sticky-sidenav');
-    $('#ic-hamburger').attr('src', 'img/icon/ic-menu-dark.png');
+    makeSticky();
   } else {
-    nav.removeClass(sticky);
-    container.css('margin-top', '0px');
-
-    breadcrumb.removeClass('sticky-crumb');
-    $('.ic-home').attr('src', 'img/icon/ic-home-white.png');
-
-    hamburger.removeClass('sticky-sidenav');
-    $('#ic-hamburger').attr('src', 'img/icon/ic-menu.png');
+    makeNotSticky();
   }
 });
 
