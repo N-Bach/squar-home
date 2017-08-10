@@ -16,6 +16,10 @@ app.get('/products', (req, res) => {
   res.sendFile(path.join(publicPath + '/products.html'));
 });
 
+app.get('/mychat', (req, res) => {
+  res.sendFile(path.join(publicPath + '/mychat.html'));
+});
+
 app.get('/contactus', (req, res) => {
   res.sendFile(path.join(publicPath + '/contactus.html'));
 });

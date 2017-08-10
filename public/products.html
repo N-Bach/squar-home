@@ -54,15 +54,13 @@
   </div>
 
   <div id="nav" class="tabs animated fadeIn delay-nav">
-    <!-- <div id="nav" class="tabs"> -->
     <div class="tab-button">
-      <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">ALL</button>
-      <button class="tablinks" onclick="openCity(event, 'games')">GAMES</button>
-      <button class="tablinks" onclick="openCity(event, 'apps')">APPS</button>
+      <div><button data-filter="all" class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">ALL</button></div>
+      <div><button data-filter="1" class="tablinks" onclick="openCity(event, 'games')">GAMES</button></div>
+      <div><button data-filter="2" class="tablinks" onclick="openCity(event, 'apps')">APPS</button></div>
     </div>
   </div>
 
-  <!-- <div class="container"> -->
   <div class="container animated fadeIn delay-container">
 
     <div class="scroll-indicator">
@@ -336,8 +334,8 @@
     <span>© 2017 SQUAR PTE LTD. All Rights Reserved.</span>
   </footer>
 
-
   <script type="text/javascript " src="js/vendor/jquery.min.js "></script>
+  <script type="text/javascript " src="js/vendor/jquery.filterizr.min.js"></script>
   <script type="text/javascript " src="js/products-index.js "></script>
 
 </body>

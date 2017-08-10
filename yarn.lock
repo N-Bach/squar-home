@@ -96,6 +96,10 @@ express@^4.15.3:
     utils-merge "1.0.0"
     vary "~1.1.1"
 
+filterizr@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/filterizr/-/filterizr-1.2.5.tgz#b0e51ee75ac7e46431ae14459149a925779602ec"
+
 finalhandler@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.0.3.tgz#ef47e77950e999780e86022a560e3217e0d0cc89"
