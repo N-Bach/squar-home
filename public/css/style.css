@@ -230,7 +230,7 @@ a {
 }
 
 .spin-circle-animate {
-  -webkit-animation-delay: 1.3s;
+  -webkit-animation-delay: 0.8s;
   -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.8s;
   -moz-animation-iteration-count: 1;

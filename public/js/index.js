@@ -152,25 +152,6 @@ function setupCasourel() {
   setNavigator(carousel);
 }
 
-function typeWriter(component, text, n) {
-  if (n < text.length) {
-    $(component).html(text.substring(0, n + 1));
-    n++;
-    setTimeout(function() {
-      typeWriter(component, text, n);
-    }, 80);
-  }
-}
-
-function typeSlogan() {
-  var connecting = $('#connect').data('text');
-  var myanmmar = $('#myanmar').data('text');
-  typeWriter('#connect', connecting, 0);
-  setTimeout(function() {
-    typeWriter('#myanmar', myanmmar, 0);
-  }, 1000);
-}
-
 // close nav bar when clicking out side of the nav
 function setNavBehavior() {
   $(document).click(function(e) {
@@ -187,7 +168,6 @@ function setNavBehavior() {
 
 $(document).ready(function() {
   setNavBehavior();
-  typeSlogan();
   var isCasourelUp = false;
   var $isAnimatedSecond = $('#section2 .is-animated');
   var $isAnimatedThird = $('#section3 .is-animated');
