@@ -12,5 +12,8 @@
     "filterizr": "^1.2.5",
     "fullpage.js": "^2.9.4",
     "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

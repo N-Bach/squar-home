@@ -1,15 +1,26 @@
 * {
   font-family: 'Gill Sans';
-  color: white;
 }
 
 body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.delay-nav {
+  animation-delay: 0.3s;
+}
+
+.delay-container {
+  animation-delay: 0.5s;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 56px;
+  height: 56px;
+  z-index: 10;
 }
 
 #hamburger {
@@ -128,127 +139,8 @@ a {
   line-height: 1.15;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background-image: url('../img/contactus/bg-image.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.content {
-  margin: auto auto;
-  height: 500px;
-  width: 690px;
-  display: flex;
-  flex-direction: column;
-}
-
-.content .title {
-  font-size: 64px;
-  font-weight: 600;
-  text-align: left;
-  animation-delay: .3s;
-}
-
-.content .email {
-  border-top: dashed 1px rgba(165, 165, 165, 0.6);
-  border-bottom: dashed 1px rgba(165, 165, 165, 0.6);
-  padding: 18px 0;
-  font-size: 18px;
-  font-weight: 300;
-  animation-delay: .7s;
-}
-
-.content .email span {
-  color: #e4b315;
-}
-
-.content .social-link {
-  margin: 32px 0 32px 0;
-  animation-delay: .9s;
-}
-
-.content .social-link img {
-  width: 32px;
-  height: 32px;
-  margin-right: 6px;
-  transition: 0.2s;
-}
-
-.content .social-link img:hover {
-  opacity: 0.6;
-}
-
-.content .policy {
-  height: 43px;
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 300;
-  animation-delay: 1s;
-}
-
-.spacer {
-  margin: 0 64px;
-}
-
-.content .copyright {
-  margin-top: 18px;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.1px;
-  text-align: center;
-  animation-delay: 1.1s;
-}
-
-.content .offices {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 42px;
-  margin-top: 48px;
-
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  text-align: left;
-}
-.office {
-  font-size: 22px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.content .offices .vn-office {
-  width: 290px;
-  display: inline;
-  margin-right: 42px;
-  animation-delay: .5s;
-}
-
-.content .offices .my-office {
-  width: 330px;
-  display: inline;
-  animation-delay: .6s;
-}
-
-.address {
-  opacity: 0.6;
-}
-
-.logo {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  width: 56px;
-  height: 56px;
-  z-index: 10;
+.pointer {
+  cursor: pointer;
 }
 
 .breadcrum-container {
@@ -302,9 +194,117 @@ ul.breadcrumb li a {
   color: white;
   text-decoration: none;
   transition: 0.2s;
+  opacity: 0.5;
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
   color: #e4b315;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 8px 0 rgba(188, 204, 217, 0.25);
+}
+
+.sticky-crumb {
+  position: fixed;
+  top: 16px;
+  left: 32px;
+  z-index: 10;
+}
+
+.sticky-crumb ul li {
+  color: #1e384f;
+}
+
+.sticky-crumb ul li a {
+  color: #1e384f;
+}
+
+.sticky-crumb ul li + li:before {
+  content: url('../img/icon/ic-arrow.png');
+}
+
+.sticky-sidenav {
+  position: fixed;
+  top: 18px !important;
+  right: 38px !important;
+}
+
+.product-footer {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #1e384f;
+}
+
+.product-footer span {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tabs {
+  height: 56px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.tabs .tab-button {
+  font-size: 16px;
+  color: #1e384f;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}
+
+.tab-button button {
+  /* padding: 16px 0px; */
+  padding: 0px;
+  margin: 0 32px;
+  outline: 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #1e384f;
+  transition: 0.2s;
+  height: 100%;
+  font-weight: 400;
+  cursor: pointer;
+  /* box-sizing: content-box; */
+}
+
+.tab-button button:hover {
+  color: #e4b315;
+}
+
+.tab-button span button.active {
+  border-bottom: 4px solid #e4b315;
+}
+
+.tab-button div {
+  height: 56px;
+  box-sizing: content-box;
+}
+
+.tab-button div button.active {
+  border-bottom: 4px solid #e4b315;
+}
+
+.tab-button button.active {
+  color: #e4b315;
+}
+
+.tabcontent {
+  display: none;
 }

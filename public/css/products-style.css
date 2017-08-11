@@ -49,7 +49,7 @@ ul.breadcrumb li {
   font-size: 12px;
   font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: white;
   float: left;
   line-height: 24px;
 }
@@ -225,6 +225,7 @@ ul.breadcrumb li a:hover {
 .sticky {
   position: fixed;
   top: 0;
+  box-shadow: 0 2px 8px 0 rgba(188, 204, 217, 0.25);
 }
 
 .sticky-crumb {
