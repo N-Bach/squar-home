@@ -87,6 +87,7 @@
   outline: none;
   margin-right: 16px;
   border: none;
+  cursor: pointer;
 }
 
 #google-play {
@@ -240,4 +241,41 @@
 
 .center-vertical {
   align-items: center;
+}
+
+#update .content {
+  width: 1010px;
+  height: 1000px;
+  box-sizing: border-box;
+  padding: 52px 0;
+  margin: auto;
+  display: flex;
+}
+
+#update .mockup {
+  width: 35%;
+}
+
+#update .version-list {
+  width: 65%;
+  height: 100%;
+}
+
+#update .title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: #1e384f;
+}
+
+#update .body {
+  opacity: 0.7;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #1e384f;
+}
+
+.maxwidth-version {
+  max-width: 500px;
 }
