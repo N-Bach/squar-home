@@ -49,8 +49,10 @@
 
   <div class="header animated fadeIn">
     <div class="content">
-      <div class="hero half"></div>
-      <div class="intro half">
+      <!-- <div class="hero half"></div> -->
+      <div class="hero"></div>
+      <div class="intro">
+        <!-- <div class="intro half"> -->
         <div class="logo-mychat mg-bottom-8">
           <img src="img/icon/logo-mychat.png" alt="logo-mychat" height="80px" width="80px">
         </div>
@@ -62,16 +64,16 @@
           end devices and flaky cellular networks.
         </div>
         <div class="app-link mg-bottom-26">
-          <button id="apk">
+          <button id="apk" onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_self')">
               <img src="img/icon/ic-download.png" alt="Download APK"> APK Download
           </button>
-          <button id="google-play">
+          <button id="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')">
               <img src="img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play">
              <!-- <a href="#"><img src="img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play"></a>  -->
           </button>
         </div>
         <div class="follow">
-          Follow us on <a href="#"><img src="img/icon/if-fb-white.png" alt="MyCHAT FB page" width="24px" height="24px"></a>
+          Follow us on <a href="https://www.facebook.com/MyChatMyanmar/"><img src="img/icon/if-fb-white.png" alt="MyCHAT FB page" width="24px" height="24px"></a>
         </div>
       </div>
     </div>
@@ -208,49 +210,96 @@
           <div class="version">
             <div class="title">Version 2.4</div>
             <div class="body maxwidth-version">
-              Version 2.4 includes super cool features: <br /> -Dating
-              <br /> - Completely FREE to view profiles and swipe to skip or like your matches.<br /> - Easily connect with
-              people nearby, Create filters based on age, gender and distance.<br /> - Enhance your dating experience with
-              a Premium Subscription- unlock <br /> unlimited profiles and chatting to get to know your matches.<br /> -
-              Now users can find and message MyChat friends directly from their phone contacts. Get in touch now!<br /> -
-              Application stability and performance improvements.<br />
+              <ul>
+                <li>Add Date" tab to main screen</li>
+                <li>Users have 7 day trial</li>
+                <li>Trial accounts can view unlimited profiles</li>
+                <li>Free accounts have 20 profiles per day</li>
+                <li>LA is removed to serve "Date"</li>
+                <li>A call from England will be delivered to users</li>
+                <li>After 5 mins without completing registration, an SMS will arrive to users</li>
+                <li>Remove depictive photos from Payment</li>
+                <li>Update description of Red dot</li>
+                <li>Fix issue that list of Daters can't be loaded if user open the push of more than 20 LIKES</li>
+                <li>Cache profiles for 24 hours</li>
+                <li>Fix minor issue (Package name not bold on succesful payment dialog - Topup)</li>
+                <li>Fix issue that Age range can't be changed</li>
+                <li>Remove cover, make avatar bigger in Dating screen</li>
+                <li>Tap on Dating card will open Expanded Dating Card</li>
+                <li>Show default status if user hasn't set it</li>
+                <li>Show highlighted photos in EDC if any</li>
+                <li>Load list randomly</li>
+                <li>Allow free users to match & chat</li>
+                <li>Add highlighted photos section</li>
+              </ul>
             </div>
           </div>
           <div class="version">
             <div class="title">Version 2.3</div>
             <div class="body maxwidth-version">
-              - Created exclusively for Myanmar. We make sure MyChat runs smoothly on your device. <br /> - Runs on technology
-              that minimises data usage.<br /> - Supports both Myanmar and English languages.<br /> - New payment methods
-              witkh MECTel and Red dot top-up cards.<br />
+              <ul>
+                <li>Forward messages</li>
+                <li>Split push notifications of each room</li>
+                <li>Show content of last message in push notification</li>
+                <li>URL Preview</li>
+                <li>New Stickers store</li>
+                <li>Share sticker pack</li>
+                <li>Support buying sticker via Mectel and Telenor phone bill</li>
+                <li>Share images/links from web/gallery to MyChat</li>
+                <li>Add more payment methods:</li>
+                <ol>
+                  <li>Topup (Mectel)</li>
+                  <li>REDDOT PAY PIN</li>
+                  <li>Wallet</li>
+                </ol>
+              </ul>
+              <br /> THIS VERSION IS AVAILABLE IN MYANMAR MERELY. INTERNATIONAL VERSION IS REMOVED FROM THIS TIME
             </div>
           </div>
           <div class="version">
             <div class="title">Version 2.2</div>
             <div class="body maxwidth-version">
-              Version 2.4 includes super cool features: <br /> -Dating
-              <br /> - Completely FREE to view profiles and swipe to skip or like your matches.<br /> - Easily connect with
-              people nearby, Create filters based on age, gender and distance.<br /> - Enhance your dating experience with
-              a Premium Subscription- unlock <br /> unlimited profiles and chatting to get to know your matches.<br /> -
-              Now users can find and message MyChat friends directly from their phone contacts. Get in touch now!<br /> -
-              Application stability and performance improvements.<br />
+              <ul>
+                <li>Remove "Nearby friends" from Discover</li>
+                <li>Combine Apps and Games to ""APPS & GAMES"" sub-tab under Discover</li>
+                <li>Add "STICKERS" as second sub-tab under Discover</li>
+                <li>Redesign photo sharing in chat: Quick sharing, full screen gallery</li>
+                <li>Add new keyboard layout</li>
+                <li>Remove x icon when typing</li>
+                <li>Add "SHARE LOCATION" into chat room</li>
+                <li>Add "SHARE CONTACT" into chat room</li>
+                <li>Temporarily remove CAPTION for sharing photos</li>
+                <li>Add "SCROLL DOWN" button after scrolling up chat stream</li>
+                <li>Change QOS to "0"</li>
+                <li>Group messages that are send/receive within 1 minute period</li>
+                <li>Handle downloading paid sticker pack</li>
+                <li>Add in-app browser</li>
+                <li>Fix crahses on Android 4.4 and below due to Stack Overflow</li>
+              </ul>
             </div>
           </div>
           <div class="version">
             <div class="title">Version 2.1</div>
             <div class="body maxwidth-version">
-              - Why SMS when you can MyChat for free. <br /> - Search and make new friends using the Nearby Friends feature.
-              <br /> - Create group chats with up to 30 people.<br /> - Send up to 5 photos at once with captions.<br />              - An online wallet to use your remaining balance for purchases later.<br />
+              <ul>
+                <li>Add "Share Profile"</li>
+                <li>Add "Downloader"</li>
+                <li>Add "Respond" button when opening profile that sent Friend request</li>
+                <li>Fix some crashes on Samsung devices</li>
+                <li>Fix issue that MyChat is mis-operated when connecting to Wifi that has no DATA</li>
+              </ul>
             </div>
           </div>
           <div class="version">
             <div class="title">Version 2.0</div>
             <div class="body maxwidth-version">
-              Version 2.4 includes super cool features: <br /> -Dating
-              <br /> - Completely FREE to view profiles and swipe to skip or like your matches.<br /> - Easily connect with
-              people nearby, Create filters based on age, gender and distance.<br /> - Enhance your dating experience with
-              a Premium Subscription- unlock <br /> unlimited profiles and chatting to get to know your matches.<br /> -
-              Now users can find and message MyChat friends directly from their phone contacts. Get in touch now!<br /> -
-              Application stability and performance improvements.<br />
+              <ul>
+                <li>Redesign everything</li>
+                <li>Refactor core Chat</li>
+                <li>Refactor Onboarding</li>
+                <li>Feed is removed</li>
+                <li>Add Games, Apps storev</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -262,7 +311,7 @@
     <!-- end of tab update -->
   </div>
 
-  <footer class="product-footer">
+  <footer class="product-footer animated fadeIn delay-foot">
     <span>© 2017 SQUAR PTE LTD. All Rights Reserved.</span>
   </footer>
 

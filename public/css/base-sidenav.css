@@ -14,6 +14,10 @@ body {
   animation-delay: 0.5s;
 }
 
+.delay-foot {
+  animation-delay: 0.7s;
+}
+
 .logo {
   position: absolute;
   top: 30px;
