@@ -309,4 +309,29 @@ ul.breadcrumb li a:hover {
 
 .tabcontent {
   display: none;
+  position: relative;
+}
+
+.container .scroll-indicator {
+  position: absolute;
+  bottom: 44px;
+  right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.scroll-indicator img {
+  width: 24px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.scroll-indicator span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1e384f;
+  cursor: pointer;
 }
