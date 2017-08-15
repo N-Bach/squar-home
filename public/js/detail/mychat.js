@@ -18,5 +18,22 @@ function openTab(evt, tabName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = 'block';
+  setAnimate(tabName);
   evt.currentTarget.className += ' active';
+}
+
+function setAnimate(tabName) {
+  var element = $('#' + tabName + ' .is-animated');
+  var animationDelay = ['.1s', '.3s', '.4s'];
+
+  element.map(function(item, index) {});
+  if (element.eq(0).hasClass('animated')) {
+    element.map(function(index, item) {
+      element.eq(index).removeClass('fadeIn');
+    });
+  } else {
+    element.map(function(index, item) {
+      element.eq(index).addClass('animated fadeIn').css('animation-delay', animationDelay[index]);
+    });
+  }
 }
