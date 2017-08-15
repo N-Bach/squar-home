@@ -16,7 +16,7 @@ app.get('/products', (req, res) => {
   res.sendFile(path.join(publicPath + '/products.html'));
 });
 
-app.get('/mychat', (req, res) => {
+app.get('/products/mychat', (req, res) => {
   res.sendFile(path.join(publicPath + '/mychat.html'));
 });
 

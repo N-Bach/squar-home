@@ -37,22 +37,22 @@ var hamburger = $('#hamburger');
 
 function makeHamburgerSticky() {
   hamburger.addClass('sticky-sidenav');
-  $('#ic-hamburger').attr('src', 'img/icon/ic-menu-dark.png');
+  $('#ic-hamburger').attr('src', '/img/icon/ic-menu-dark.png');
 }
 
 function makeHamburgerNotSticky() {
   hamburger.removeClass('sticky-sidenav');
-  $('#ic-hamburger').attr('src', 'img/icon/ic-menu.png');
+  $('#ic-hamburger').attr('src', '/img/icon/ic-menu.png');
 }
 
 function makeBreadcrumbSticky() {
   breadcrumb.addClass('sticky-crumb');
-  $('.ic-home').attr('src', 'img/icon/ic-home.png');
+  $('.ic-home').attr('src', '/img/icon/ic-home.png');
 }
 
 function makeBreadcrumbNotSticky() {
   breadcrumb.removeClass('sticky-crumb');
-  $('.ic-home').attr('src', 'img/icon/ic-home-white.png');
+  $('.ic-home').attr('src', '/img/icon/ic-home-white.png');
 }
 
 function makeSticky() {
