@@ -117,6 +117,12 @@ ul.breadcrumb li a:hover {
   opacity: 0.6;
 }
 
+.sidenav .page-link a.active {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
+}
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;

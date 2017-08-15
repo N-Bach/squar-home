@@ -50,6 +50,7 @@ a {
 #section5 .sec5 {
   background: url('../img/bg-section5.jpg');
   background-repeat: no-repeat;
+  background-size: 50% 100%;
 }
 
 #hamburger {
@@ -492,7 +493,7 @@ a {
 
 #section3 .card-list .card {
   position: relative;
-  width: 28%;
+  width: 295px;
   height: 100%;
   background-color: #ffffff;
   border-radius: 14px;
