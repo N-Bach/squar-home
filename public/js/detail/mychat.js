@@ -37,3 +37,19 @@ function setAnimate(tabName) {
     });
   }
 }
+
+var wrapper = $('#update .wrapper');
+var stickyClass = 'sticky-mockup';
+
+$(window).scroll(function() {
+  // console.log($(this).scrollTop());
+  if (wrapper.height() > 0 && $(this).scrollTop() > wrapper.height() + 14) {
+    wrapper.addClass(stickyClass);
+    // $('#update .mockup').addClass(stickyClass);
+  } else {
+    wrapper.removeClass(stickyClass);
+    // $('#update .mockup').removeClass(stickyClass);
+  }
+
+  // console.log(wrapper.height());
+});

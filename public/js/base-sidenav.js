@@ -57,7 +57,7 @@ function makeBreadcrumbNotSticky() {
 
 function makeSticky() {
   nav.addClass(sticky);
-  container.css('margin-top', '62px');
+  container.css('margin-top', '56px');
 
   makeBreadcrumbSticky();
   makeHamburgerSticky();

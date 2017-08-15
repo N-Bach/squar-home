@@ -32,12 +32,10 @@
   margin-bottom: 26px;
 }
 
-/* .header .content .hero {
-  margin-left: 153px;
-  background-image: url('../../img/detail/mychat/my-chat.png');
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-} */
+.mg-top-14 {
+  margin-top: 14px;
+}
+
 .header .content .hero {
   position: absolute;
   top: 84;
@@ -45,7 +43,7 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
   height: 100%;
-  width: 100%;
+  width: 60%;
   z-index: 1;
   top: 84px;
   left: 153px;
@@ -110,7 +108,7 @@
   cursor: pointer;
 }
 
-#google-play {
+.google-play {
   background-color: #1e384f;
   align-items: center;
   display: flex;
@@ -118,7 +116,7 @@
   flex-direction: row;
 }
 
-#apk {
+.apk {
   color: white;
   font-size: 18px;
   background-color: #ffbe00;
@@ -268,19 +266,28 @@
   box-sizing: border-box;
   padding: 52px 0;
   margin: auto;
-  display: flex;
+  /* display: flex; */
+}
+
+.content:after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 #update .mockup {
   width: 35%;
+  text-align: center;
+  float: right;
 }
 
 #update .version-list {
   width: 65%;
   height: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding-left: 52px;
   border-left: 2px dashed #1e384f;
+  float: left;
 }
 
 #update .title {
@@ -341,6 +348,35 @@
   position: absolute;
   left: -71px;
   top: 0;
+}
+
+#update .mockup #new-datting {
+  width: 287px;
+  height: auto;
+}
+
+#update .mockup .wrapper {
+  width: 352px;
+  height: 582px;
+}
+
+#update .app-link {
+  display: flex;
+}
+
+#update .app-link button {
+  width: 160px;
+  height: 48px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0px 8px;
+}
+
+.sticky-mockup {
+  position: fixed;
+  top: 64px;
 }
 
 .tab-button button.active {
