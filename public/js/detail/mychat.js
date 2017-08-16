@@ -50,6 +50,18 @@ $(window).scroll(function() {
     wrapper.removeClass(stickyClass);
     // $('#update .mockup').removeClass(stickyClass);
   }
+});
 
-  // console.log(wrapper.height());
+$(document).ready(function() {
+  // $('.feature-group').addClass('hidden').viewportChecker({
+  //   classToAdd: 'visible animated fadeIn',
+  //   offset: 100
+  //   // classToRemove: 'hidden' // Class to remove before adding 'classToAdd' to the elements
+  //   // removeClassAfterAnimation: true // Remove added classes after animation has finished
+  // });
+  // console.log($('.feature-group').addClass('hidden'));
+  // $('.feature-group').addClass('hidden').viewportChecker({
+  //   classToAdd: 'visible animated fadeIn',
+  //   offset: 0
+  // });
 });

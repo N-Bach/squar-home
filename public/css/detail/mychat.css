@@ -155,7 +155,7 @@
 }
 
 #overview .wrapper {
-  max-width: 485px;
+  max-width: 505px;
 }
 
 #overview .title {
@@ -204,10 +204,7 @@
 
 #feature .mockup {
   width: 50%;
-  box-sizing: border-box;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 #feature .text {
@@ -238,11 +235,15 @@
 }
 
 .maxwidth-chatting {
-  max-width: 506px;
+  max-width: 542px;
+}
+
+.maxwidth-sticker {
+  max-width: 460px;
 }
 
 .maxwidth-datting {
-  max-width: 530px;
+  max-width: 495px;
 }
 
 .mg-bottom-16 {
@@ -396,4 +397,11 @@
 
 .delay-intro {
   animation-delay: 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
 }
