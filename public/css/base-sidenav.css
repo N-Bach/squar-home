@@ -210,6 +210,7 @@ ul.breadcrumb li a {
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
   color: #e4b315;
+  opacity: 1;
 }
 
 .sticky {

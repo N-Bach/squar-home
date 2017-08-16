@@ -390,7 +390,10 @@
 .tab-button div button.active {
   border-bottom: 4px solid #99177e;
 }
+.delay-hero {
+  animation-delay: 0.3s;
+}
 
-ul.breadcrumb li a:hover {
-  color: #99177e;
+.delay-intro {
+  animation-delay: 0.5s;
 }
