@@ -73,10 +73,12 @@ function makeNotSticky() {
 
 // sticky nav
 $(window).scroll(function() {
-  if ($(this).scrollTop() > header) {
-    makeSticky();
-  } else {
-    makeNotSticky();
+  if (!isGame) {
+    if ($(this).scrollTop() > header) {
+      makeSticky();
+    } else {
+      makeNotSticky();
+    }
   }
 });
 
