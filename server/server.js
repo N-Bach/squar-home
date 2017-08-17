@@ -28,6 +28,18 @@ app.get('/products/landofmagic', (req, res) => {
   res.sendFile(path.join(publicPath + '/landofmagic.html'));
 });
 
+app.get('/products/myhero', (req, res) => {
+  res.sendFile(path.join(publicPath + '/myhero.html'));
+});
+
+app.get('/products/hawkhero', (req, res) => {
+  res.sendFile(path.join(publicPath + '/hawkhero.html'));
+});
+
+app.get('/products/myfish', (req, res) => {
+  res.sendFile(path.join(publicPath + '/myfish.html'));
+});
+
 app.get('/contactus', (req, res) => {
   res.sendFile(path.join(publicPath + '/contactus.html'));
 });
