@@ -40,6 +40,10 @@ app.get('/products/myfish', (req, res) => {
   res.sendFile(path.join(publicPath + '/myfish.html'));
 });
 
+app.get('/products/luckywingabar', (req, res) => {
+  res.sendFile(path.join(publicPath + '/luckywingabar.html'));
+});
+
 app.get('/contactus', (req, res) => {
   res.sendFile(path.join(publicPath + '/contactus.html'));
 });

@@ -1,0 +1,13 @@
+#luckywingabar-bg {
+  background-image: url('../../img/detail/luckywingabar/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#luckywingabar-hero {
+  background-image: url('../../img/detail/luckywingabar/character.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 620px;
+}
