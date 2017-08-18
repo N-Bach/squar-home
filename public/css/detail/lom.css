@@ -103,8 +103,8 @@
 }
 
 .header .content .app-link button {
-  width: 176px;
-  height: 48px;
+  width: 164px;
+  height: 40px;
   border-radius: 100px;
   outline: none;
   margin-right: 16px;
@@ -128,6 +128,10 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+}
+
+.app-store {
+  background-color: #1e384f;
 }
 
 #ic-download {
@@ -230,18 +234,18 @@
   align-items: center;
 }
 
-#feature .body ul {
+#feature ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#feature .body li {
+#feature li {
   padding-left: 1em;
   text-indent: -1.5em;
 }
 
-#feature .body li::before {
+#feature li::before {
   content: url('../../img/detail/lom/ic-feature.png');
   padding-right: 16px;
 }

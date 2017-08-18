@@ -10,3 +10,7 @@
   background-repeat: no-repeat;
   width: 620px;
 }
+
+#myfish-maxwidth {
+  max-width: 525px;
+}
