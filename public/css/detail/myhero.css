@@ -10,3 +10,9 @@
   background-repeat: no-repeat;
   width: 620px;
 }
+
+@media (max-width: 480px) {
+  .header {
+    height: 645px;
+  }
+}

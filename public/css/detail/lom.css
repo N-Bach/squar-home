@@ -241,8 +241,8 @@
 }
 
 #feature li {
-  padding-left: 1em;
-  text-indent: -1.5em;
+  padding-left: 2em;
+  text-indent: -2em;
 }
 
 #feature li::before {
@@ -273,6 +273,10 @@ footer.product-footer {
   opacity: 1;
 }
 
+.show-this {
+  display: none;
+}
+
 /* Large desktop */
 @media (min-width: 1200px) {
 }
@@ -286,18 +290,47 @@ footer.product-footer {
     flex-direction: column-reverse;
   }
 
+  .container #feature .special-content {
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container div#feature .special-content .half {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #feature .special-content .half .mockup img {
+    text-align: center;
+    max-width: 95%;
+    max-height: 95%;
+    margin: 0;
+  }
+
+  #feature .special-content .half .mockup {
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 0;
+  }
+
   .container .content .text {
     width: 100%;
     justify-content: center;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     margin-bottom: 32px;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .container .wrapper {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .container .content .mockup {
@@ -314,6 +347,14 @@ footer.product-footer {
     box-sizing: border-box;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .show-this {
+    display: initial;
+  }
+
+  .hide-this {
+    display: none;
   }
 }
 
@@ -377,13 +418,15 @@ footer.product-footer {
     margin-top: 16px;
   }
 
+  .app-store {
+    margin-top: 16px;
+  }
+
   .header .content .follow {
     text-align: center;
     font-size: 14px;
   }
-}
 
-@media (max-width: 480px) {
   .header .content .intro .name {
     font-size: 50px;
   }
