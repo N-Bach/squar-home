@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/css/vendor/animate.min.css">
   <link rel="stylesheet" type="text/css" href="/css/base-sidenav.css">
-  <link rel="stylesheet" type="text/css" href="/css/detail/mychat.css">
+  <link rel="stylesheet" type="text/css" href="/css/detail/callhome.css">
   <link rel="shortcut icon" type="image/png" href="/img/icon/favicon.ico" />
 </head>
 
@@ -47,14 +47,14 @@
     </ul>
   </div>
 
-  <div class="header animated fadeIn">
+  <div class="header animated fadeIn" id="callhome-bg">
     <div class="content">
       <!-- <div class="hero half"></div> -->
-      <div class="hero animated fadeIn delay-hero"></div>
+      <div class="hero animated fadeIn delay-hero" id="callhome-hero"></div>
       <div class="intro animated fadeIn delay-intro">
         <!-- <div class="intro half"> -->
         <div class="logo-mychat mg-bottom-8">
-          <img src="/img/icon/logo-mychat.png" alt="logo-mychat" height="80px" width="80px">
+          <img src="/img/detail/callhome/logo-callhome.png" alt="logo-callhome" height="80px" width="80px">
         </div>
         <div class="name mg-bottom-8">
           CallHome
@@ -67,7 +67,7 @@
               <img src="/img/icon/ic-download.png" alt="Download APK"> APK Download
           </button>
           <button class="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')">
-              <img src="/img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play">
+              <img src="/img/icon/btt-google.png" alt="Get CallHome in Google Play">
           </button>
         </div>
         <div class="follow">
@@ -77,236 +77,82 @@
     </div>
   </div>
 
-  <div id="nav" class="tabs animated fadeIn delay-nav">
-    <div class="tab-button">
-      <div><button class="tablinks" onclick="openTab(event, 'overview')" id="defaultOpen">OVERVIEW</button></div>
-      <div><button class="tablinks" onclick="openTab(event, 'feature')">FEATURES</button></div>
-      <div><button class="tablinks" onclick="openTab(event, 'update')">UPDATES</button></div>
-    </div>
-  </div>
-
   <div class="container">
 
-    <div class="tabcontent" id="overview">
+    <section id="overview" class="bg-grey">
       <div class="content">
-
-        <div class="text is-animated">
-          <div class="wrapper">
-            <div class="title">
-              call anyone, anytime!
-            </div>
-            <div class="body">
-              An app that lets you stay in touch with friends and family in 190+ countries at affordable rates. Start by downloading our
-              app and get updated with what your friends and family are doing right now.
-              <br /> <br /> With affordable calling rates to a landline or mobile phone, CallHome helps you keep close ties
-              with your important connections abroad across 190+ countries. Now distance makes no difference.
-              <br /> <br /> Who's waiting to hear from you? Don't let them wait - Call them right away!
+        <div class="half">
+          <div class="text">
+            <div class="wrapper maxwidth-overview">
+              <div class="title">
+                call anyone, anytime!
+              </div>
+              <div class="body">
+                An app that lets you stay in touch with friends and family in 190+ countries at affordable rates. Start by downloading our
+                app and get updated with what your friends and family are doing right now.
+                <br/> <br/> With affordable calling rates to a landline or mobile phone, CallHome helps you keep close ties
+                with your important connections abroad across 190+ countries. Now distance makes no difference.
+                <br/> <br/> Who's waiting to hear from you? Don't let them wait - Call them right away!
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="mockup is-animated">
-          <img src="/img/detail/mychat/my-chat-mockup.png" alt="mychat-mockup">
+        <div class="half">
+          <div class="mockup">
+            <img src="/img/detail/callhome/mockup-overview.png" alt="callhome-overview">
+          </div>
         </div>
-
       </div>
-    </div>
-    <!-- end of tab overview -->
-
-    <div class="tabcontent" id="feature">
-
-      <div class="scroll-indicator">
-
-        <img src="/img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="topFunction()">
-        <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
-      </div>
-
+    </section>
+    <section id="feature">
       <div class="content">
-        <section id="chat" class="feature-group bg-grey is-animated">
+        <div class="half">
           <div class="mockup">
-            <img src="/img/detail/mychat/mockup-chatting.png" alt="chatting">
+            <img src="/img/detail/callhome/mockup-feature.png" alt="callhome-overview">
           </div>
-          <div class="text center-vertical">
-            <div class="wrapper mg-left-32">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-chat.png" alt="chatting">
+        </div>
+        <div class="half">
+          <div class="text">
+            <div class="wrapper maxwidth-feature">
+              <div class="title">
+                key features.
               </div>
-              <div class="title mg-bottom-12">
-                Affordable rates
-              </div>
-              <div class="body maxwidth-chatting">
-                Buy discounted bundles to specific countries or pay as you go.
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end of section chat -->
+              <div class="body">
+                <span>Affordable rates</span> <br /> Buy discounted bundles to specific countries or pay as you go. <br /><br
+                />
+                <span>Less dropped calls</span> <br /> The app has been optimized for crystal clear audio quality using 3G,
+                4G or WiFi.
+                <br /><br /> <span>Easy payment options</span> <br /> Seamless payment using Stripe and PayPal. <br /><br
+                />
 
-        <section id="sticker" class="feature-group is-animated">
-          <div class="text-end center-vertical">
-            <div class="wrapper">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-sticker.png" alt="chatting">
-              </div>
-              <div class="title mg-bottom-12">
-                Less dropped calls
-              </div>
-              <div class="body maxwidth-chatting">
-                The app has been optimized for crystal clear audio quality using 3G, 4G or WiFi.
               </div>
             </div>
           </div>
-          <div class="mockup">
-            <img src="/img/detail/mychat/mockup-sticker.png" alt="sticker">
-          </div>
-        </section>
-        <!-- end of section sticker -->
-
-        <section id="dating" class="feature-group bg-grey is-animated">
-          <div class="mockup">
-            <img src="/img/detail/mychat/mockup-dating.png" alt="sticker">
-          </div>
-          <div class="text center-vertical">
-            <div class="wrapper">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-dating.png" alt="chatting">
-              </div>
-              <div class="title mg-bottom-12">
-                Easy payment options
-              </div>
-              <div class="body maxwidth-chatting">
-                Seamless payment using Stripe and PayPal.
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end of section datting -->
+        </div>
       </div>
-    </div>
-    <!-- end of tab feature -->
-
-    <div class="tabcontent bg-grey" id="update">
-
-      <div class="scroll-indicator">
-
-        <img src="/img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="topFunction()">
-        <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
-      </div>
-
+    </section>
+    <section id="update" class="bg-grey">
       <div class="content">
-        <div class="version-list is-animated">
-          <div class="version">
-            <div class="title">Version 2.4</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Add "Date" tab to main screen</li>
-                <li>Users have 7 day trial</li>
-                <li>Trial accounts can view unlimited profiles</li>
-                <li>Free accounts have 20 profiles per day</li>
-                <li>LA is removed to serve "Date"</li>
-                <li>A call from England will be delivered to users</li>
-                <li>After 5 mins without completing registration, an SMS will arrive to users</li>
-                <li>Remove depictive photos from Payment</li>
-                <li>Update description of Red dot</li>
-                <li>Fix issue that list of Daters can't be loaded if user open the push of more than 20 LIKES</li>
-                <li>Cache profiles for 24 hours</li>
-                <li>Fix minor issue (Package name not bold on succesful payment dialog - Topup)</li>
-                <li>Fix issue that Age range can't be changed</li>
-                <li>Remove cover, make avatar bigger in Dating screen</li>
-                <li>Tap on Dating card will open Expanded Dating Card</li>
-                <li>Show default status if user hasn't set it</li>
-                <li>Show highlighted photos in EDC if any</li>
-                <li>Load list randomly</li>
-                <li>Allow free users to match & chat</li>
-                <li>Add highlighted photos section</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.3</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Forward messages</li>
-                <li>Split push notifications of each room</li>
-                <li>Show content of last message in push notification</li>
-                <li>URL Preview</li>
-                <li>New Stickers store</li>
-                <li>Share sticker pack</li>
-                <li>Support buying sticker via Mectel and Telenor phone bill</li>
-                <li>Share images/links from web/gallery to MyChat</li>
-                <li>Add more payment methods:</li>
-                <ol>
-                  <li>Topup (Mectel)</li>
-                  <li>REDDOT PAY PIN</li>
-                  <li>Wallet</li>
-                </ol>
-              </ul>
-              <br /> THIS VERSION IS AVAILABLE IN MYANMAR MERELY. INTERNATIONAL VERSION IS REMOVED FROM THIS TIME
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.2</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Remove "Nearby friends" from Discover</li>
-                <li>Combine Apps and Games to "APPS & GAMES" sub-tab under Discover</li>
-                <li>Add "STICKERS" as second sub-tab under Discover</li>
-                <li>Redesign photo sharing in chat: Quick sharing, full screen gallery</li>
-                <li>Add new keyboard layout</li>
-                <li>Remove x icon when typing</li>
-                <li>Add "SHARE LOCATION" into chat room</li>
-                <li>Add "SHARE CONTACT" into chat room</li>
-                <li>Temporarily remove CAPTION for sharing photos</li>
-                <li>Add "SCROLL DOWN" button after scrolling up chat stream</li>
-                <li>Change QOS to "0"</li>
-                <li>Group messages that are send/receive within 1 minute period</li>
-                <li>Handle downloading paid sticker pack</li>
-                <li>Add in-app browser</li>
-                <li>Fix crahses on Android 4.4 and below due to Stack Overflow</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.1</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Add "Share Profile"</li>
-                <li>Add "Downloader"</li>
-                <li>Add "Respond" button when opening profile that sent Friend request</li>
-                <li>Fix some crashes on Samsung devices</li>
-                <li>Fix issue that MyChat is mis-operated when connecting to Wifi that has no DATA</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.0</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Redesign everything</li>
-                <li>Refactor core Chat</li>
-                <li>Refactor Onboarding</li>
-                <li>Feed is removed</li>
-                <li>Add Games, Apps storev</li>
-              </ul>
+        <div class="half">
+          <div class="text">
+            <div class="wrapper maxwidth-update">
+              <div class="title">
+                what’s new.
+              </div>
+              <div class="body">
+                - Caller sees charges for each call <br/> - Caller calls to a phone number using dial pad <br/> - When caller
+                is typing dial pad, show matching contact name <br/> - Payment by credit card with Stripe <br/>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mockup is-animated">
-          <div class="wrapper">
-            <img id="new-datting" src="/img/detail/mychat/my-chat-ads.png" alt="ads">
-            <div class="app-link mg-top-14">
-              <button class="apk" onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_self')">
-                <img src="/img/icon/ic-download.png" alt="Download APK"> APK Download
-              </button>
-              <button class="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')">
-                <img src="/img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play">
-              </button>
-            </div>
+        <div class="half">
+          <div class="mockup">
+            <img src="/img/detail/callhome/mockup-update.png" alt="callhome-overview">
           </div>
         </div>
       </div>
-    </div>
-    <!-- end of tab update -->
+    </section>
   </div>
 
   <footer class="product-footer animated fadeIn delay-foot">
@@ -314,11 +160,10 @@
   </footer>
 
   <script>
-    var isGame = false;
+    var isGame = true;
   </script>
   <script type="text/javascript " src="/js/vendor/jquery.min.js "></script>
   <script type="text/javascript " src="/js/base-sidenav.js "></script>
-  <script type="text/javascript " src="/js/detail/mychat.js "></script>
 
 </body>
 
