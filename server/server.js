@@ -24,6 +24,10 @@ app.get('/products/callhome', (req, res) => {
   res.sendFile(path.join(publicPath + '/callhome.html'));
 });
 
+app.get('/products/fastsell', (req, res) => {
+  res.sendFile(path.join(publicPath + '/fastsell.html'));
+});
+
 app.get('/products/landofmagic', (req, res) => {
   res.sendFile(path.join(publicPath + '/landofmagic.html'));
 });

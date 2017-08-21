@@ -14,3 +14,9 @@
 #myfish-maxwidth {
   max-width: 525px;
 }
+
+@media (max-width: 480px) {
+  .header {
+    height: 645px;
+  }
+}
