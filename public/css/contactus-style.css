@@ -145,7 +145,7 @@ a {
 
 .content {
   margin: auto auto;
-  height: 500px;
+  /* height: 500px; */
   width: 690px;
   display: flex;
   flex-direction: column;
@@ -313,4 +313,42 @@ ul.breadcrumb li a {
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
   color: #e4b315;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 100%;
+    padding: 16px;
+    margin: 84px 0 0 0;
+  }
+
+  .breadcrum-container {
+    display: none;
+  }
+
+  .spacer {
+    margin: 0 16px;
+  }
+
+  .content-policy {
+    width: 95%;
+  }
+
+  .content .offices {
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .my-office {
+    margin-top: 16px;
+  }
+
+  .content .offices .vn-office {
+    margin-right: 0px;
+  }
+
+  .content .social-link {
+    margin: 24px 0;
+  }
 }
