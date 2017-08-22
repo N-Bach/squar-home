@@ -11,12 +11,10 @@
 }
 
 .header .content {
-  box-sizing: border-box;
-  width: 100%;
+  width: 1060px;
   height: 472px;
-  display: flex;
-  flex-direction: row;
   position: relative;
+  margin: 88px auto 0px auto;
 }
 
 .half {
@@ -38,23 +36,21 @@
 
 .header .content .hero {
   position: absolute;
-  top: 84;
   background-image: url('../../img/detail/mychat/my-chat.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
   height: 100%;
   width: 60%;
   z-index: 1;
-  top: 84px;
-  left: 153px;
+  top: 0px;
+  left: 0px;
 }
 
 .header .content .intro {
   position: absolute;
   left: 55%;
-  top: 84;
   z-index: 2;
-  top: 84px;
+  top: 0px;
 }
 
 .header .content .logo-mychat {
@@ -77,6 +73,12 @@
   text-align: left;
   color: #ffffff;
   max-width: 505px;
+}
+
+.header .content .description .notice {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 12px;
 }
 
 .header .content .follow {
@@ -140,6 +142,7 @@
   background-image: url('../../img/detail/callhome/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 #callhome-hero {
@@ -147,6 +150,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   width: 620px;
+}
+
+.section-padding {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 #overview {
@@ -255,4 +263,93 @@
 
 .delay-overview {
   animation-delay: 0.6s;
+}
+
+@media (max-width: 1060px) {
+  /* .maxwidth-overview {
+    max-width: 100%;
+  }
+
+  .maxwidth-feature {
+    max-width: 100%;
+  }
+
+  .maxwidth-update {
+    max-width: 100%;
+  } */
+
+  .container .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 970px) {
+  #callhome-hero {
+    left: -13%;
+  }
+}
+
+@media (max-width: 970px) {
+  .container .content {
+    flex-direction: column-reverse;
+    padding: 32px 0px;
+  }
+
+  .container #special-content-reverse {
+    flex-direction: column;
+  }
+
+  #overview {
+    height: auto;
+  }
+
+  #feature {
+    height: auto;
+  }
+
+  #update {
+    height: auto;
+  }
+
+  .content .half {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  #callhome-hero {
+    display: none;
+  }
+
+  .breadcrum-container {
+    display: none;
+  }
+
+  .header .content .intro {
+    margin: 12px auto 0px auto;
+    position: relative;
+    left: auto;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header .content .app-link button {
+    width: 150px;
+    heght: 44px;
+  }
+
+  .header {
+    height: 600px;
+  }
 }
