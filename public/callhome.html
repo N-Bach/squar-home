@@ -50,8 +50,8 @@
   <div class="header animated fadeIn" id="callhome-bg">
     <div class="content">
       <!-- <div class="hero half"></div> -->
-      <div class="hero animated fadeIn delay-hero" id="callhome-hero"></div>
-      <div class="intro animated fadeIn delay-intro">
+      <div class="hero animated fadeInLeft delay-hero" id="callhome-hero"></div>
+      <div class="intro animated fadeInRight delay-intro">
         <!-- <div class="intro half"> -->
         <div class="logo-mychat mg-bottom-8">
           <img src="/img/detail/callhome/logo-callhome.png" alt="logo-callhome" height="80px" width="80px">
@@ -81,7 +81,7 @@
 
     <section id="overview" class="bg-grey">
       <div class="content">
-        <div class="half">
+        <div class="half is-animated-left delay-overview">
           <div class="text">
             <div class="wrapper maxwidth-overview">
               <div class="title">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="half">
+        <div class="half is-animated-right delay-overview">
           <div class="mockup">
             <img src="/img/detail/callhome/mockup-overview.png" alt="callhome-overview">
           </div>
@@ -106,12 +106,12 @@
     </section>
     <section id="feature">
       <div class="content">
-        <div class="half">
+        <div class="half is-animated-left">
           <div class="mockup">
             <img src="/img/detail/callhome/mockup-feature.png" alt="callhome-overview">
           </div>
         </div>
-        <div class="half">
+        <div class="half is-animated-right">
           <div class="text">
             <div class="wrapper maxwidth-feature">
               <div class="title">
@@ -133,7 +133,7 @@
     </section>
     <section id="update" class="bg-grey">
       <div class="content">
-        <div class="half">
+        <div class="half is-animated-left">
           <div class="text">
             <div class="wrapper maxwidth-update">
               <div class="title">
@@ -146,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="half">
+        <div class="half is-animated-right">
           <div class="mockup">
             <img src="/img/detail/callhome/mockup-update.png" alt="callhome-overview">
           </div>
@@ -163,8 +163,9 @@
     var isGame = true;
   </script>
   <script type="text/javascript " src="/js/vendor/jquery.min.js "></script>
+  <script type="text/javascript " src="/js/vendor/jquery.viewportchecker.min.js"></script>
   <script type="text/javascript " src="/js/base-sidenav.js "></script>
-
+  <script type="text/javascript " src="/js/detail/animation.js "></script>
 </body>
 
 </html>
