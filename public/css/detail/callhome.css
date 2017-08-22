@@ -55,7 +55,7 @@
 
 .header .content .logo-mychat {
   padding: 0px;
-  height: 80px;
+  height: auto;
 }
 
 .header .content .name {
@@ -334,6 +334,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .header .content .app-link button {
+    width: 250px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -344,12 +349,7 @@
 }
 
 @media (max-width: 430px) {
-  .header .content .app-link button {
-    width: 150px;
-    heght: 44px;
-  }
-
   .header {
-    height: 600px;
+    height: 570px;
   }
 }

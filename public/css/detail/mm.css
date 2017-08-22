@@ -1,0 +1,12 @@
+#mm-bg {
+  background-image: url('../../img/detail/mingalabarmorning/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mm-hero {
+  background-image: url('../../img/detail/mingalabarmorning/mockup-mm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 620px;
+}
