@@ -161,7 +161,8 @@
   height: 550px;
 }
 
-#feature {
+#feature,
+#feature2 {
   height: 550px;
 }
 
@@ -172,7 +173,6 @@
 .container .content {
   width: 1060px;
   height: 100%;
-  /* background-color: yellow; */
   margin: auto;
   display: flex;
 }
@@ -191,7 +191,7 @@
 
 .content .half .mockup img {
   max-height: 90%;
-  width: auto;
+  max-width: 95%;
 }
 
 .content .text {
@@ -266,18 +266,6 @@
 }
 
 @media (max-width: 1060px) {
-  /* .maxwidth-overview {
-    max-width: 100%;
-  }
-
-  .maxwidth-feature {
-    max-width: 100%;
-  }
-
-  .maxwidth-update {
-    max-width: 100%;
-  } */
-
   .container .content {
     width: 100%;
   }
@@ -299,14 +287,9 @@
     flex-direction: column;
   }
 
-  #overview {
-    height: auto;
-  }
-
-  #feature {
-    height: auto;
-  }
-
+  #overview,
+  #feature,
+  #feature2,
   #update {
     height: auto;
   }
@@ -318,7 +301,9 @@
 }
 
 @media (max-width: 850px) {
-  #callhome-hero {
+  #callhome-hero,
+  #fastsell-hero,
+  #mm-hero {
     display: none;
   }
 
@@ -335,9 +320,13 @@
     padding-right: 20px;
   }
 
+  .header .content .app-link {
+    flex-direction: column;
+  }
+
   .header .content .app-link button {
-    width: 250px;
-    margin: auto;
+    width: 230px;
+    margin: 8px auto;
   }
 }
 
@@ -351,5 +340,9 @@
 @media (max-width: 430px) {
   .header {
     height: 570px;
+  }
+
+  #mm-bg {
+    height: 590px;
   }
 }

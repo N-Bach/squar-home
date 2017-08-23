@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/css/vendor/animate.min.css">
   <link rel="stylesheet" type="text/css" href="/css/base-sidenav.css">
-  <link rel="stylesheet" type="text/css" href="/css/detail/mychat.css">
+  <link rel="stylesheet" type="text/css" href="/css/detail/callhome.css">
+  <link rel="stylesheet" type="text/css" href="/css/detail/fastsell.css">
   <link rel="shortcut icon" type="image/png" href="/img/icon/favicon.ico" />
 </head>
 
@@ -43,18 +44,17 @@
     <ul class="breadcrumb">
       <li><a href="/"><img src="/img/icon/ic-home-white.png" alt="Home" class="ic-home"></a></li>
       <li><a href="/products">OUR PRODUCTS</a></li>
-      <li>CALLHOME</li>
+      <li>FASTSELL</li>
     </ul>
   </div>
 
-  <div class="header animated fadeIn">
+  <div class="header animated fadeIn" id="fastsell-bg">
     <div class="content">
       <!-- <div class="hero half"></div> -->
-      <div class="hero animated fadeIn delay-hero"></div>
-      <div class="intro animated fadeIn delay-intro">
-        <!-- <div class="intro half"> -->
+      <div class="hero animated fadeInLeft delay-hero" id="fastsell-hero"></div>
+      <div class="intro animated fadeInRight delay-intro">
         <div class="logo-mychat mg-bottom-8">
-          <img src="/img/icon/logo-mychat.png" alt="logo-mychat" height="80px" width="80px">
+          <img src="/img/detail/fastsell/logo.png" alt="logo-fastsell" height="80px" width="80px">
         </div>
         <div class="name mg-bottom-8">
           FastSell
@@ -63,252 +63,113 @@
           A peer-to-peer marketplace, allowing people to trade with others nearby.
         </div>
         <div class="app-link mg-bottom-26">
-          <button class="apk" onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_self')">
+          <button class="apk" onclick="window.open('https://fastsell.com.mm/apk_download/app-production-release.apk','_self')">
               <img src="/img/icon/ic-download.png" alt="Download APK"> APK Download
           </button>
-          <button class="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')">
-              <img src="/img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play">
+          <button class="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=vn.fastsell.app.mm','_blank')">
+              <img src="/img/icon/btt-google.png" alt="Get CallHome in Google Play">
           </button>
         </div>
         <div class="follow">
-          Follow us on <a href="https://www.facebook.com/MyChatMyanmar/"><img src="/img/icon/if-fb-white.png" alt="MyCHAT FB page" width="24px" height="24px"></a>
+          Follow us on <a href="https://www.facebook.com/FastSellMyanmar/" target="_blank"><img src="/img/icon/if-fb-white.png" alt="CallHome FB page" width="24px" height="24px"></a>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="nav" class="tabs animated fadeIn delay-nav">
-    <div class="tab-button">
-      <div><button class="tablinks" onclick="openTab(event, 'overview')" id="defaultOpen">OVERVIEW</button></div>
-      <div><button class="tablinks" onclick="openTab(event, 'feature')">FEATURES</button></div>
-      <div><button class="tablinks" onclick="openTab(event, 'update')">UPDATES</button></div>
     </div>
   </div>
 
   <div class="container">
 
-    <div class="tabcontent" id="overview">
+    <section id="overview" class="bg-grey section-padding">
       <div class="content">
-
-        <div class="text is-animated">
-          <div class="wrapper">
-            <div class="title">
-              fast sales, quick cash
-            </div>
-            <div class="body">
-              An easy to use mobile marketplace to buy and sell new or used items nearby. Contact buyers and sellers directly to conduct
-              quick transactions. Totally FREE to sign up, list or buy with a simple registration process. Download the FastSell
-              app and enjoy the convenience of having a nearby flea market on your smartphone!
+        <div class="half is-animated-left delay-overview">
+          <div class="text">
+            <div class="wrapper maxwidth-overview">
+              <div class="title">
+                fast sales, quick cash.
+              </div>
+              <div class="body">
+                An easy to use mobile marketplace to buy and sell new or used items nearby. Contact buyers and sellers directly to bargain
+                and conduct quick transactions. Totally FREE to sign up, list or buy with a simple registration process.
+                Download the FastSell app and enjoy the convenience of having a nearby flea market on your smartphone!
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="mockup is-animated">
-          <img src="/img/detail/mychat/my-chat-mockup.png" alt="mychat-mockup">
+        <div class="half is-animated-right delay-overview">
+          <div class="mockup">
+            <img src="/img/detail/fastsell/mockup-overview.png" alt="fastsell-overview">
+          </div>
         </div>
-
       </div>
-    </div>
-    <!-- end of tab overview -->
-
-    <div class="tabcontent" id="feature">
-
-      <div class="scroll-indicator">
-
-        <img src="/img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="topFunction()">
-        <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
+    </section>
+    <section id="feature" class="section-padding">
+      <div class="content" id="special-content-reverse">
+        <div class="half is-animated-left">
+          <div class="mockup">
+            <img src="/img/detail/fastsell/mockup-feature-1.png" alt="fastsell-overview">
+          </div>
+        </div>
+        <div class="half is-animated-right">
+          <div class="text">
+            <div class="wrapper maxwidth-feature">
+              <div class="title">
+                earn cash easily.
+              </div>
+              <div class="body">
+                -Earn extra cash by simply taking a photo of the item with your phone and posting it for sale in less than a minute. <br/>                -Sell new or used items that are cluttering up your home! <br/> -Expand your business by adding another sales
+                channel.
+                <br/>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
+    </section>
+    <section id="update" class="bg-grey section-padding">
       <div class="content">
-        <section id="chat" class="feature-group bg-grey is-animated">
-          <div class="mockup">
-            <img src="/img/detail/mychat/mockup-chatting.png" alt="chatting">
-          </div>
-          <div class="text center-vertical">
-            <div class="wrapper mg-left-32">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-chat.png" alt="chatting">
+        <div class="half is-animated-left">
+          <div class="text">
+            <div class="wrapper maxwidth-update">
+              <div class="title">
+                diverse product offering.
               </div>
-              <div class="title mg-bottom-12">
-                Earn cash easily
+              <div class="body">
+                -A wide range of new and used items, FastSell has it all! <br/> -Find cars, electronics, fashion, accessories,
+                handmade goods and even more. <br/> -Discover items you've been searching for at reduced prices! <br/>
               </div>
-              <div class="body maxwidth-chatting">
-                -Earn extra cash by simply taking a photo of the item with your phone and posting it for sale in less than a minute. <br
-                /> -Sell new or used items that are cluttering up your home! <br /> -Expand your business by adding another
-                sales channel. <br />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end of section chat -->
-
-        <section id="sticker" class="feature-group is-animated">
-          <div class="text-end center-vertical">
-            <div class="wrapper">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-sticker.png" alt="chatting">
-              </div>
-              <div class="title mg-bottom-12">
-                Diverse Product Offering
-              </div>
-              <div class="body maxwidth-chatting">
-                -A wide range of new and used items, FastSell has it all! <br /> -Find cars, electronics, fashion, accessories,
-                handmade goods and even more. <br /> -Discover items you've been searching for at reduced prices!
-              </div>
-            </div>
-          </div>
-          <div class="mockup">
-            <img src="/img/detail/mychat/mockup-sticker.png" alt="sticker">
-          </div>
-        </section>
-        <!-- end of section sticker -->
-
-        <section id="dating" class="feature-group bg-grey is-animated">
-          <div class="mockup">
-            <img src="/img/detail/mychat/mockup-dating.png" alt="sticker">
-          </div>
-          <div class="text center-vertical">
-            <div class="wrapper">
-              <div class="icon-holder mg-bottom-16">
-                <img src="/img/icon/ic-dating.png" alt="chatting">
-              </div>
-              <div class="title mg-bottom-12">
-                Safe shopping environment
-              </div>
-              <div class="body maxwidth-chatting">
-                -See the profile of who you are transacting with. <br /> -The FastSell team monitors all listings and activity
-                daily and removes any inappropriate content or users. <br />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end of section datting -->
-      </div>
-    </div>
-    <!-- end of tab feature -->
-
-    <div class="tabcontent bg-grey" id="update">
-
-      <div class="scroll-indicator">
-
-        <img src="/img/icon/ic-animated-scroll-up.gif" alt="ic-scroll-down" id="scroll-down" class="pointer" onclick="topFunction()">
-        <span id="text-scroll-down" class="pointer" onclick="topFunction()">Back to Top</span>
-      </div>
-
-      <div class="content">
-        <div class="version-list is-animated">
-          <div class="version">
-            <div class="title">Version 2.4</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Add "Date" tab to main screen</li>
-                <li>Users have 7 day trial</li>
-                <li>Trial accounts can view unlimited profiles</li>
-                <li>Free accounts have 20 profiles per day</li>
-                <li>LA is removed to serve "Date"</li>
-                <li>A call from England will be delivered to users</li>
-                <li>After 5 mins without completing registration, an SMS will arrive to users</li>
-                <li>Remove depictive photos from Payment</li>
-                <li>Update description of Red dot</li>
-                <li>Fix issue that list of Daters can't be loaded if user open the push of more than 20 LIKES</li>
-                <li>Cache profiles for 24 hours</li>
-                <li>Fix minor issue (Package name not bold on succesful payment dialog - Topup)</li>
-                <li>Fix issue that Age range can't be changed</li>
-                <li>Remove cover, make avatar bigger in Dating screen</li>
-                <li>Tap on Dating card will open Expanded Dating Card</li>
-                <li>Show default status if user hasn't set it</li>
-                <li>Show highlighted photos in EDC if any</li>
-                <li>Load list randomly</li>
-                <li>Allow free users to match & chat</li>
-                <li>Add highlighted photos section</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.3</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Forward messages</li>
-                <li>Split push notifications of each room</li>
-                <li>Show content of last message in push notification</li>
-                <li>URL Preview</li>
-                <li>New Stickers store</li>
-                <li>Share sticker pack</li>
-                <li>Support buying sticker via Mectel and Telenor phone bill</li>
-                <li>Share images/links from web/gallery to MyChat</li>
-                <li>Add more payment methods:</li>
-                <ol>
-                  <li>Topup (Mectel)</li>
-                  <li>REDDOT PAY PIN</li>
-                  <li>Wallet</li>
-                </ol>
-              </ul>
-              <br /> THIS VERSION IS AVAILABLE IN MYANMAR MERELY. INTERNATIONAL VERSION IS REMOVED FROM THIS TIME
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.2</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Remove "Nearby friends" from Discover</li>
-                <li>Combine Apps and Games to "APPS & GAMES" sub-tab under Discover</li>
-                <li>Add "STICKERS" as second sub-tab under Discover</li>
-                <li>Redesign photo sharing in chat: Quick sharing, full screen gallery</li>
-                <li>Add new keyboard layout</li>
-                <li>Remove x icon when typing</li>
-                <li>Add "SHARE LOCATION" into chat room</li>
-                <li>Add "SHARE CONTACT" into chat room</li>
-                <li>Temporarily remove CAPTION for sharing photos</li>
-                <li>Add "SCROLL DOWN" button after scrolling up chat stream</li>
-                <li>Change QOS to "0"</li>
-                <li>Group messages that are send/receive within 1 minute period</li>
-                <li>Handle downloading paid sticker pack</li>
-                <li>Add in-app browser</li>
-                <li>Fix crahses on Android 4.4 and below due to Stack Overflow</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.1</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Add "Share Profile"</li>
-                <li>Add "Downloader"</li>
-                <li>Add "Respond" button when opening profile that sent Friend request</li>
-                <li>Fix some crashes on Samsung devices</li>
-                <li>Fix issue that MyChat is mis-operated when connecting to Wifi that has no DATA</li>
-              </ul>
-            </div>
-          </div>
-          <div class="version">
-            <div class="title">Version 2.0</div>
-            <div class="body maxwidth-version">
-              <ul>
-                <li>Redesign everything</li>
-                <li>Refactor core Chat</li>
-                <li>Refactor Onboarding</li>
-                <li>Feed is removed</li>
-                <li>Add Games, Apps storev</li>
-              </ul>
             </div>
           </div>
         </div>
-        <div class="mockup is-animated">
-          <div class="wrapper">
-            <img id="new-datting" src="/img/detail/mychat/my-chat-ads.png" alt="ads">
-            <div class="app-link mg-top-14">
-              <button class="apk" onclick="window.open('http://download.mysquar.com.s3.amazonaws.com/apk/mychat/mychat.apk','_self')">
-                <img src="/img/icon/ic-download.png" alt="Download APK"> APK Download
-              </button>
-              <button class="google-play" onclick=" window.open('https://play.google.com/store/apps/details?id=com.squar.mychat.release','_blank')">
-                <img src="/img/icon/ic-google-play.png" alt="Get MyCHAT in Google Play">
-              </button>
+        <div class="half is-animated-right">
+          <div class="mockup">
+            <img src="/img/detail/fastsell/mockup-feature-2.png" alt="fastsell-overview">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feature2" class="section-padding">
+      <div class="content" id="special-content-reverse">
+        <div class="half is-animated-left">
+          <div class="mockup">
+            <img src="/img/detail/fastsell/mockup-feature-3.png" alt="fastsell-overview">
+          </div>
+        </div>
+        <div class="half is-animated-right">
+          <div class="text">
+            <div class="wrapper maxwidth-feature">
+              <div class="title">
+                safe shopping environment.
+              </div>
+              <div class="body">
+                -See the profile of who you are transacting with. <br/> -The FastSell team monitors all listings and activity
+                daily and removes any inappropriate content or users. <br/>
+                <br/>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end of tab update -->
+    </section>
   </div>
 
   <footer class="product-footer animated fadeIn delay-foot">
@@ -316,12 +177,12 @@
   </footer>
 
   <script>
-    var isGame = false;
+    var isGame = true;
   </script>
   <script type="text/javascript " src="/js/vendor/jquery.min.js "></script>
+  <script type="text/javascript " src="/js/vendor/jquery.viewportchecker.min.js"></script>
   <script type="text/javascript " src="/js/base-sidenav.js "></script>
-  <script type="text/javascript " src="/js/detail/mychat.js "></script>
-
+  <script type="text/javascript " src="/js/detail/animation.js "></script>
 </body>
 
 </html>

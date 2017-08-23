@@ -2,11 +2,29 @@
   background-image: url('../../img/detail/mingalabarmorning/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+#mm-bg .content {
+  display: flex;
+  padding-top: 16px;
 }
 
 #mm-hero {
   background-image: url('../../img/detail/mingalabarmorning/mockup-mm.png');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 620px;
+  position: relative;
+  width: 50%;
+}
+
+#mm-intro {
+  position: relative;
+  left: 0px;
+  padding-left: 24px;
+}
+
+#mm-intro .name {
+  font-size: 52px;
 }
