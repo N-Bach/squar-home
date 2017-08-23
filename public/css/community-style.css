@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 30px;
   width: 56px;
@@ -18,7 +18,7 @@ body {
 .header {
   width: 100%;
   box-sizing: border-box;
-  height: 500px;
+  height: 280px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -50,11 +50,11 @@ body {
 .container {
   width: 100%;
   box-sizing: border-box;
-  padding: 32px 0;
+  padding: 32px 20px;
 }
 
 .content {
-  width: 60%;
+  width: 806px;
   margin: auto;
   font-size: 24px;
 }
@@ -84,4 +84,28 @@ body {
   font-size: 16px;
   text-align: center;
   color: #ffffff;
+}
+
+.delay-title {
+  animation-delay: 0.3s;
+}
+
+.delay-content {
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 850px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrum-container {
+    display: none;
+  }
+
+  .title {
+    padding-top: 40px;
+  }
 }
