@@ -6,7 +6,7 @@ var details = {
     },
     {
       name: 'Mingalarbar Morning',
-      description: 'News aggregator'
+      description: 'News aggregator site'
     },
     {
       name: 'FastSell',
@@ -18,7 +18,7 @@ var details = {
     },
     {
       name: 'Land Of Magic',
-      description: 'Comming soon'
+      description: 'Massively multiplayer game'
     },
     {
       name: 'My Hero - Bo Lattae',
@@ -27,10 +27,6 @@ var details = {
     {
       name: 'Lucky Wingabar',
       description: 'Casino games'
-    },
-    {
-      name: 'MyCombo',
-      description: 'Combat game'
     },
     {
       name: 'Hawk Hero',
