@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Gill Sans', 'Gill Sans MT';
+  src: url('../fonts/GillSans.ttc');
+}
+
 * {
-  font-family: 'Gill Sans';
+  font-family: 'Gill Sans', 'Gill Sans MT';
 }
 
 .logo {
@@ -13,11 +18,6 @@
 
 a {
   text-decoration: none;
-}
-
-@font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  src: url('GillSans.ttc');
 }
 
 .container #fullpage .section {
