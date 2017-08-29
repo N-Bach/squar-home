@@ -1,10 +1,20 @@
 @font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT';
-  src: url('../fonts/GillSans.ttc');
+  font-family: 'GillSans';
+  src: url('../fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-SemiBold';
+  src: url('../fonts/GillSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
 }
 
 * {
-  font-family: 'Gill Sans';
+  font-family: 'GillSans';
   color: white;
 }
 
@@ -15,6 +25,7 @@ body {
 a {
   text-decoration: none;
   color: white;
+  font-family: "GillSans-Light";
 }
 
 #hamburger {
@@ -48,9 +59,10 @@ a {
 /* The navigation menu links */
 .sidenav .page-link a {
   text-decoration: none;
-  /* color: #818181; */
   color: white;
-  font-size: 2em;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46px;
   display: block;
   transition: 0.3s;
 }
@@ -161,6 +173,7 @@ a {
   font-weight: 600;
   text-align: left;
   animation-delay: .3s;
+  font-family: "GillSans-SemiBold";
 }
 
 .content .email {
@@ -170,6 +183,7 @@ a {
   font-size: 18px;
   font-weight: 300;
   animation-delay: .7s;
+  font-family: "GillSans-Light";
 }
 
 .content .email span {
@@ -232,8 +246,9 @@ a {
 }
 .office {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
+  font-family: "GillSans-SemiBold";
 }
 
 .content .offices .vn-office {
@@ -244,13 +259,18 @@ a {
 }
 
 .content .offices .my-office {
-  width: 330px;
+  width: 335px;
   display: inline;
   animation-delay: .6s;
 }
 
 .address {
-  opacity: 0.6;
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-family: "GillSans-Light";
 }
 
 .logo {
@@ -296,6 +316,7 @@ ul.breadcrumb li {
   color: #ffffff;
   float: left;
   line-height: 24px;
+  font-family: "GillSans-SemiBold";
 }
 
 ul.breadcrumb li img {
@@ -313,6 +334,7 @@ ul.breadcrumb li a {
   color: white;
   text-decoration: none;
   transition: 0.2s;
+  font-family: "GillSans-SemiBold";
 }
 
 /* Add a color on mouse-over */

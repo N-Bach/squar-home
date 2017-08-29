@@ -1,14 +1,10 @@
 @font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT';
-  src: url('../fonts/GillSans.ttc');
+  font-family: 'GillSans';
+  src: url('../fonts/GillSans.ttf');
 }
 
 * {
-  font-family: 'Gill Sans';
-}
-
-body {
-  margin: 0;
+  font-family: 'GillSans';
 }
 
 .logo {

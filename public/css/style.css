@@ -1,10 +1,25 @@
 @font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT';
-  src: url('../fonts/GillSans.ttc');
+  font-family: 'GillSans';
+  src: url('../fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Bold';
+  src: url('../fonts/GillSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-SemiBold';
+  src: url('../fonts/GillSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
 }
 
 * {
-  font-family: 'Gill Sans', 'Gill Sans MT';
+  font-family: 'GillSans';
 }
 
 .logo {
@@ -84,9 +99,10 @@ a {
 /* The navigation menu links */
 .sidenav .page-link a {
   text-decoration: none;
-  /* color: #818181; */
   color: white;
-  font-size: 2em;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46px;
   display: block;
   transition: 0.3s;
 }
@@ -172,10 +188,8 @@ a {
   margin-top: 60px;
   font-size: 64px;
   font-weight: 600;
-  letter-spacing: 2px;
   margin-top: 80px;
   margin-bottom: 0px;
-  /* -webkit-text-stroke-width: 2px; */
   color: #1e384f;
 }
 
@@ -186,13 +200,15 @@ a {
   font-weight: 300;
   letter-spacing: 0.1px;
   text-align: center;
+  line-height: 28px;
+  letter-spacing: 0.1px;
   color: rgba(30, 56, 79, 0.6);
+  font-family: 'GillSans-Light';
 }
 
 #section2 .seperator {
   font-size: 1.8em;
   margin-top: 6px;
-  /* margin-bottom: 4px; */
   font-weight: lighter;
   color: #f4df9d;
 }
@@ -201,12 +217,12 @@ a {
   color: #161616;
   text-align: center;
   font-size: 20px;
-  /* line-height: 24px; */
-  /* font-weight: 300; */
+  line-height: 24px;
   letter-spacing: 0.1px;
   margin-bottom: 40px;
   margin-top: 16px;
-  color: #1e384f;
+  color: rgba(30, 56, 79, 0.6);
+  font-family: 'GillSans-Light';
 }
 
 .about-us-pic {
@@ -256,17 +272,18 @@ a {
   color: white;
   width: 400px;
   text-align: center;
-  font-weight: bolder;
-  font-size: 40px;
-  letter-spacing: 0.7px;
 }
 
 #connect {
   font-size: 30px;
+  font-family: "GillSans-Bold";
+  letter-spacing: 0.7px;
 }
 
 #myanmar {
   font-size: 50px;
+  font-family: "GillSans-Bold";
+  letter-spacing: 0.7px;
 }
 
 .scroll-indicator {
@@ -354,17 +371,17 @@ a {
   line-height: 64px;
   text-align: left;
   color: #1e384f;
+  font-family: "GillSans-SemiBold";
 }
 
 #section5 .hero .hiring-text .body {
-  /* color: #7c7a78; */
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.1px;
   text-align: left;
-  color: rgba(30, 56, 79, 0.74);
-  /* opacity: 0.74; */
+  color: rgba(30, 56, 79, 0.5);
+  font-family: "GillSans-Light";
 }
 
 #section5 .hero .jobs {
@@ -419,9 +436,10 @@ a {
   bottom: 12px;
   left: 18px;
   color: white;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.25;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 #section5 .see-more-text {
@@ -448,7 +466,6 @@ a {
 #section3 .column .text .title {
   margin-top: 60px;
   margin-bottom: 9px;
-  -webkit-text-stroke-width: 2px;
   letter-spacing: 2px;
   font-size: 64px;
   font-weight: 600;
@@ -462,10 +479,10 @@ a {
   font-weight: 300;
   letter-spacing: 0.4px;
   color: rgba(30, 56, 79, 0.6);
-  opacity: 0.7;
   width: 53%;
   text-align: center;
   align-items: center;
+  font-family: "GillSans-Light";
 }
 
 #section3 .column .card-list {
@@ -493,7 +510,7 @@ a {
 
 #section3 .card-list .card {
   position: relative;
-  width: 295px;
+  width: 306px;
   height: 100%;
   background-color: #ffffff;
   border-radius: 14px;
@@ -536,7 +553,6 @@ a {
 #section3 .card-content .content-title {
   font-size: 20px;
   letter-spacing: -0.1px;
-  text-align: left;
   color: #1e384f;
   margin-top: 12px;
   margin-bottom: 4px;
@@ -546,11 +562,11 @@ a {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-  text-align: left;
   color: #1e384f;
   margin-top: 4px;
   margin-bottom: 8px;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.1px;
+  font-family: "GillSans-Light";
 }
 
 #section4 {
@@ -598,6 +614,7 @@ a {
   color: rgba(30, 56, 79, 0.5);
   margin: 0 0 27px 0;
   padding: 0;
+  font-family: "GillSans-Light";
 }
 
 #section4 .hero .column .btn-explore {
@@ -616,6 +633,7 @@ a {
 }
 #section4 .hero .column .btn-explore a {
   color: #1e384f;
+  font-family: "GillSans-Light";
 }
 
 #section4 .hero .column .btn-explore:hover a {
@@ -700,6 +718,7 @@ a {
   letter-spacing: 0.1px;
   color: #1e384f;
   margin-bottom: 4px;
+  font-family: "GillSans-SemiBold";
 }
 
 #section4 .product .descript {
@@ -707,6 +726,7 @@ a {
   font-weight: 300;
   letter-spacing: 0.1px;
   color: rgba(30, 56, 79, 0.5);
+  font-family: "GillSans-Light";
 }
 
 #section4 .products .carousel {

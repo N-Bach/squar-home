@@ -63,25 +63,28 @@
   font-weight: 600;
   letter-spacing: 2.1px;
   color: #ffffff;
+  font-family: "GillSans-SemiBold";
 }
 
 .header .content .description {
   opacity: 0.5;
   font-size: 20px;
-  font-weight: 100;
-  letter-spacing: 0.3px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
   text-align: left;
   color: #ffffff;
-  max-width: 480px;
+  max-width: 528px;
+  font-family: "GillSans-Light";
 }
 
 .header .content .follow {
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   color: #ffffff;
   align-items: center;
   display: flex;
   font-weight: 100;
+  font-family: "GillSans-Light";
 }
 
 .header .content .follow a {
@@ -168,7 +171,7 @@
 }
 
 .container .wrapper {
-  max-width: 505px;
+  max-width: 525px;
   color: white;
 }
 
@@ -176,6 +179,7 @@
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
+  font-family: "GillSans-SemiBold";
 }
 
 .container .body {
@@ -185,6 +189,7 @@
   text-align: left;
   font-weight: 100;
   letter-spacing: 1px;
+  font-family: "GillSans-Light";
 }
 
 .container .content .mockup {
@@ -243,6 +248,7 @@
 #feature li {
   padding-left: 2em;
   text-indent: -2em;
+  font-family: "GillSans-Light";
 }
 
 #feature li::before {

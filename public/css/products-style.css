@@ -1,10 +1,20 @@
 @font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT';
-  src: url('../fonts/GillSans.ttc');
+  font-family: 'GillSans';
+  src: url('../fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-SemiBold';
+  src: url('../fonts/GillSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
 }
 
 * {
-  font-family: 'Gill Sans';
+  font-family: 'GillSans';
 }
 
 body {
@@ -57,6 +67,7 @@ ul.breadcrumb li {
   color: white;
   float: left;
   line-height: 24px;
+  font-family: "GillSans-SemiBold";
 }
 
 ul.breadcrumb li img {
@@ -222,6 +233,7 @@ ul.breadcrumb li a:hover {
   text-align: center;
   color: #ffffff;
   margin-bottom: 3px;
+  font-family: "GillSans-SemiBold";
 }
 
 .header .text .body {
@@ -231,6 +243,7 @@ ul.breadcrumb li a:hover {
   text-align: center;
   margin: 0;
   color: rgba(255, 255, 255, 0.6);
+  font-family: "GillSans-Light";
 }
 
 .sticky {
@@ -434,10 +447,11 @@ ul.breadcrumb li a:hover {
   width: 100%;
   font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 23px;
   text-align: left;
   color: rgba(30, 56, 79, 0.7);
   margin-bottom: 8px;
+  font-family: "GillSans-Light";
 }
 
 .card .app .version {

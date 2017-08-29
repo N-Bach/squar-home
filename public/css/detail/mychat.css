@@ -1,10 +1,20 @@
 @font-face {
-  font-family: 'Gill Sans', 'Gill Sans MT';
-  src: url('../fonts/GillSans.ttc');
+  font-family: 'GillSans';
+  src: url('../fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-SemiBold';
+  src: url('../fonts/GillSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
 }
 
 * {
-  font-family: 'Gill Sans';
+  font-family: 'GillSans';
 }
 
 .header {
@@ -76,16 +86,18 @@
   font-weight: 600;
   letter-spacing: 2.1px;
   color: #ffffff;
+  font-family: "GillSans-SemiBold";
 }
 
 .header .content .description {
   opacity: 0.5;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.3px;
   text-align: left;
   color: #ffffff;
   max-width: 505px;
+  font-family: "GillSans-Light";
 }
 
 .header .content .follow {
@@ -164,7 +176,7 @@
 }
 
 #overview .wrapper {
-  max-width: 505px;
+  max-width: 520px;
 }
 
 #overview .title {
@@ -172,15 +184,17 @@
   font-weight: 600;
   color: black;
   margin-bottom: 16px;
+  font-family: "GillSans-SemiBold";
 }
 
 #overview .body {
-  opacity: 0.4;
+  opacity: 0.6;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 28px;
   text-align: left;
   color: #1e384f;
   font-weight: 300;
+  font-family: "GillSans-Light";
 }
 
 #overview .content .mockup {
@@ -238,9 +252,10 @@
   opacity: 0.7;
   font-size: 18px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 26px;
   text-align: left;
   color: #1e384f;
+  font-family: "GillSans-Light";
 }
 
 .maxwidth-chatting {
@@ -324,6 +339,7 @@
 #update .body li {
   padding-left: 1em;
   text-indent: -.7em;
+  font-family: "GillSans-Light";
 }
 
 #update .body li::before {
@@ -340,6 +356,7 @@
 }
 #update .version .title {
   margin-bottom: 8px;
+  font-family: "GillSans-SemiBold";
 }
 
 .maxwidth-version {

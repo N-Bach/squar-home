@@ -28,3 +28,7 @@
 #mm-intro .name {
   font-size: 52px;
 }
+
+.mm-maxwidth-feature {
+  max-width: 470px;
+}
