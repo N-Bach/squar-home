@@ -133,7 +133,7 @@ a {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
@@ -191,6 +191,7 @@ a {
   margin-top: 80px;
   margin-bottom: 0px;
   color: #1e384f;
+  font-family: 'GillSans-SemiBold';
 }
 
 #section2 .sub-header {
@@ -276,13 +277,13 @@ a {
 
 #connect {
   font-size: 30px;
-  font-family: "GillSans-Bold";
+  font-family: 'GillSans-Bold';
   letter-spacing: 0.7px;
 }
 
 #myanmar {
   font-size: 50px;
-  font-family: "GillSans-Bold";
+  font-family: 'GillSans-Bold';
   letter-spacing: 0.7px;
 }
 
@@ -295,7 +296,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60px;
+  width: 62px;
   height: 80px;
 }
 
@@ -322,14 +323,14 @@ a {
   padding: 8px 16px;
 }
 
-#mySidenav .social-link  a {
+#mySidenav .social-link a {
   display: inline;
   padding: 0;
   margin: 0;
   transition: 0.2s;
 }
 
-#mySidenav .social-link  a:hover {
+#mySidenav .social-link a:hover {
   opacity: 0.6;
 }
 
@@ -363,7 +364,7 @@ a {
 }
 
 #section5 .hero .hiring-text .title {
-  font-size: 60px;
+  font-size: 64px;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 24px;
@@ -371,7 +372,7 @@ a {
   line-height: 64px;
   text-align: left;
   color: #1e384f;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 #section5 .hero .hiring-text .body {
@@ -381,7 +382,7 @@ a {
   letter-spacing: 0.1px;
   text-align: left;
   color: rgba(30, 56, 79, 0.5);
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section5 .hero .jobs {
@@ -470,6 +471,7 @@ a {
   font-size: 64px;
   font-weight: 600;
   color: #1e384f;
+  font-family: 'GillSans-SemiBold';
 }
 
 #section3 .column .text .body {
@@ -482,7 +484,7 @@ a {
   width: 53%;
   text-align: center;
   align-items: center;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section3 .column .card-list {
@@ -566,7 +568,7 @@ a {
   margin-top: 4px;
   margin-bottom: 8px;
   letter-spacing: 0.1px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section4 {
@@ -605,6 +607,7 @@ a {
   color: #1e384f;
   margin: 0 0 10px 0;
   padding: 0;
+  font-family: 'GillSans-SemiBold';
 }
 
 #section4 .hero .column .body {
@@ -614,7 +617,7 @@ a {
   color: rgba(30, 56, 79, 0.5);
   margin: 0 0 27px 0;
   padding: 0;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section4 .hero .column .btn-explore {
@@ -633,7 +636,7 @@ a {
 }
 #section4 .hero .column .btn-explore a {
   color: #1e384f;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section4 .hero .column .btn-explore:hover a {
@@ -645,7 +648,7 @@ a {
 }
 
 #section4 .hero .column .btn-explore.pointer:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -718,7 +721,7 @@ a {
   letter-spacing: 0.1px;
   color: #1e384f;
   margin-bottom: 4px;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 #section4 .product .descript {
@@ -726,7 +729,7 @@ a {
   font-weight: 300;
   letter-spacing: 0.1px;
   color: rgba(30, 56, 79, 0.5);
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #section4 .products .carousel {
@@ -750,7 +753,7 @@ a {
   /* justify-content: center; */
 }
 
-#section4  .carousel .app-pic {
+#section4 .carousel .app-pic {
   display: hidden; /* hide images until carousel prepares them */
   cursor: pointer; /* not needed if you wrap carousel items in links */
   filter: brightness(50%);
@@ -766,7 +769,7 @@ a {
 }
 
 #section4 .carousel .carousel-center:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
