@@ -64,7 +64,7 @@
   font-weight: 600;
   letter-spacing: 2.1px;
   color: #ffffff;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 .header .content .description {
@@ -75,7 +75,7 @@
   text-align: left;
   color: #ffffff;
   max-width: 515px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .header .content .description .notice {
@@ -91,7 +91,7 @@
   align-items: center;
   display: flex;
   font-weight: 100;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .header .content .follow a {
@@ -212,7 +212,7 @@
   font-weight: 600;
   color: #000000;
   margin-bottom: 9px;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 .content .half .wrapper .body {
@@ -222,7 +222,7 @@
   line-height: 28px;
   color: #1e384f;
   margin-top: 9px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .maxwidth-overview {
@@ -338,8 +338,8 @@
 
 @media (max-width: 600px) {
   .section-padding {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 

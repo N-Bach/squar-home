@@ -411,3 +411,133 @@
 .visible {
   opacity: 1;
 }
+
+.scroll-small {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: none;
+}
+
+.scroll-small .holder {
+  margin: auto;
+  padding: 20px;
+  font-size: 14px;
+  color: #1e384f;
+}
+
+@media (max-width: 1100px) {
+  .breadcrum-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .scroll-small {
+    display: block;
+  }
+
+  .header .content .hero,
+  #update .mockup,
+  .container .scroll-indicator {
+    display: none;
+  }
+
+  .container .content {
+    width: 100%;
+  }
+
+  .header .content .intro {
+    margin: 12px auto 0px auto;
+    position: relative;
+    left: auto;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #overview .content {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 32px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #overview .content .text {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 0px;
+  }
+
+  #overview .content .mockup {
+    width: 100%;
+    padding: 16px 0px;
+  }
+
+  #feature .content .text,
+  #feature .text-end,
+  #feature .content .mockup {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #feature .feature-group {
+    flex-direction: column;
+    padding: 32px 20px;
+    box-sizing: border-box;
+  }
+
+  #feature #sticker {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  #update .version-list {
+    width: 100%;
+  }
+
+  #update .content {
+    padding-left: 32px;
+    width: 100%;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .header .content .app-link {
+    flex-direction: column;
+  }
+
+  .header .content .app-link button {
+    width: 230px;
+    margin: 8px auto;
+  }
+
+  .header {
+    height: 624px;
+  }
+
+  #overview .content .mockup img,
+  #feature .mockup img {
+    width: 100%;
+  }
+
+  .mg-left-32 {
+    margin-left: 0px;
+  }
+
+  .tab-button button {
+    margin: 0px 8px;
+    font-size: 14px;
+  }
+
+  #update .version-list {
+    padding-left: 24px;
+  }
+
+  #update .version:nth-child(odd):before,
+  #update .version:nth-child(even):before {
+    left: -44px;
+  }
+}
