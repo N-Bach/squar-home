@@ -28,8 +28,8 @@ app.get('/products/fastsell', (req, res) => {
   res.sendFile(path.join(publicPath + '/fastsell.html'));
 });
 
-app.get('/products/mingalabarmorning', (req, res) => {
-  res.sendFile(path.join(publicPath + '/mingalabarmorning.html'));
+app.get('/products/mingalarbarmorning', (req, res) => {
+  res.sendFile(path.join(publicPath + '/mingalarbarmorning.html'));
 });
 
 app.get('/products/landofmagic', (req, res) => {
