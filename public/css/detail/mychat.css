@@ -11,12 +11,10 @@
 }
 
 .header .content {
-  box-sizing: border-box;
-  width: 100%;
+  width: 1060px;
   height: 472px;
-  display: flex;
-  flex-direction: row;
   position: relative;
+  margin: 88px auto 0px auto;
 }
 
 .half {
@@ -40,21 +38,22 @@
   position: absolute;
   top: 84;
   background-image: url('../../img/detail/mychat/my-chat.png');
-  background-size: auto 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
-  width: 60%;
+  /* width: 60%; */
+  width: 620px;
   z-index: 1;
-  top: 84px;
-  left: 153px;
+  top: 0px;
+  left: 0px;
 }
 
 .header .content .intro {
   position: absolute;
   left: 55%;
-  top: 84;
   z-index: 2;
-  top: 84px;
+  top: 0px;
+  width: 530px;
 }
 
 .header .content .logo-mychat {
