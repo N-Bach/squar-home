@@ -11,3 +11,21 @@
   background-repeat: no-repeat;
   width: 620px;
 }
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content ul li {
+  padding-left: 20px;
+  text-indent: -22px;
+  font-family: 'GillSans-Light';
+  margin: 8px 0px;
+}
+
+.content ul li::before {
+  content: '-';
+  padding-right: 16px;
+}
