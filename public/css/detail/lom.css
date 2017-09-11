@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 556px;
-  background-image: url('../../img/detail/lom/Bg.png');
+  background-image: url('../../img/detail/lom/Bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -63,7 +63,7 @@
   font-weight: 600;
   letter-spacing: 2.1px;
   color: #ffffff;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 .header .content .description {
@@ -74,7 +74,7 @@
   text-align: left;
   color: #ffffff;
   max-width: 528px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .header .content .follow {
@@ -84,7 +84,7 @@
   align-items: center;
   display: flex;
   font-weight: 100;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .header .content .follow a {
@@ -179,7 +179,7 @@
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 .container .body {
@@ -189,7 +189,7 @@
   text-align: left;
   font-weight: 100;
   letter-spacing: 1px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .container .content .mockup {
@@ -248,7 +248,7 @@
 #feature li {
   padding-left: 2em;
   text-indent: -2em;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 #feature li::before {

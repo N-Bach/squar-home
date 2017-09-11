@@ -68,6 +68,10 @@ app.get('/terms-of-service', (req, res) => {
   res.sendFile(path.join(publicPath + '/terms.html'));
 });
 
+app.get('/test-game', (req, res) => {
+  res.sendfile(path.join(publicPath + '/test-game.html'));
+});
+
 app.listen(PORT, () => {
   console.log('Server is listenning at', PORT);
 });

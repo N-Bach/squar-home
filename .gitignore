@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 public/product-template.html
+public/game

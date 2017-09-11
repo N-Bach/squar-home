@@ -1,5 +1,5 @@
 #luckywingabar-bg {
-  background-image: url('../../img/detail/luckywingabar/bg.png');
+  background-image: url('../../img/detail/luckywingabar/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -36,7 +36,7 @@
   opacity: 1;
   padding-left: 2em;
   text-indent: -2em;
-  font-family: "GillSans-SemiBold";
+  font-family: 'GillSans-SemiBold';
 }
 
 #feature .special-content .half p {
@@ -48,7 +48,7 @@
   font-weight: 300;
   line-height: 28px;
   margin-top: 6px;
-  font-family: "GillSans-Light";
+  font-family: 'GillSans-Light';
 }
 
 .text-white {
