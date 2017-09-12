@@ -194,6 +194,7 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
+    linkHandling: 2,
     responsiveWidth: 1100,
     scrollingSpeed: 550,
     onLeave: function(index, nextIndex, direction) {

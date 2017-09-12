@@ -69,7 +69,7 @@ app.get('/terms-of-service', (req, res) => {
 });
 
 app.get('/test-game', (req, res) => {
-  res.sendfile(path.join(publicPath + '/test-game.html'));
+  res.sendFile(path.join(publicPath + '/test-game.html'));
 });
 
 app.listen(PORT, () => {
