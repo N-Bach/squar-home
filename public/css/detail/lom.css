@@ -378,7 +378,7 @@ footer.product-footer {
   }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 520px) {
   .container .content .mockup img {
     max-height: 95%;
     max-width: 95%;
@@ -392,11 +392,9 @@ footer.product-footer {
     width: 100%;
     padding-top: 16px;
   }
-}
 
-@media (max-width: 480px) {
   .header {
-    height: 580px;
+    height: 600px;
   }
 
   .header .content .intro .name {

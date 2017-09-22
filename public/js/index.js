@@ -9,10 +9,6 @@ var details = {
       description: 'News aggregator site'
     },
     {
-      name: 'FastSell',
-      description: 'Marketplace app'
-    },
-    {
       name: 'CallHome',
       description: 'VOIP app'
     },
