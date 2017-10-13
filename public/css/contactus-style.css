@@ -235,7 +235,7 @@ a {
 .content .offices {
   display: flex;
   flex-direction: row;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
   margin-top: 48px;
 
   font-size: 16px;
@@ -279,6 +279,14 @@ a {
   line-height: 24px;
   letter-spacing: 0.1px;
   font-family: "GillSans-Light";
+}
+
+.content .phone {
+   font-style: italic;
+   font-size: 16px;
+   margin-top: 12px;
+   margin-bottom: 36px;
+   animation-delay: .65s;
 }
 
 .logo {
@@ -353,9 +361,11 @@ ul.breadcrumb li a:hover {
 @media (max-width: 820px) {
   .container {
     height: auto;
+    width: 100%;
   }
 
   .content {
+    box-sizing: border-box;
     width: 100%;
     padding: 16px;
     margin: 84px 0 0 0;
