@@ -290,7 +290,7 @@ a {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 30px;
   width: 56px;

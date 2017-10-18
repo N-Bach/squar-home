@@ -59,6 +59,10 @@ app.get('/products/myfish', (req, res) => {
   res.sendFile(path.join(publicPath + '/myfish.html'));
 });
 
+app.get('/products/kywaeen', (req, res) => {
+  res.sendFile(path.join(publicPath + '/kywaeen.html'));
+});
+
 app.get('/products/luckywingabar', (req, res) => {
   res.sendFile(path.join(publicPath + '/luckywingabar.html'));
 });

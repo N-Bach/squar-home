@@ -1,0 +1,16 @@
+#kywaeen-bg {
+  background-image: url('../../img/detail/kywaeen/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kywaeen-hero {
+  background-image: url('../../img/detail/kywaeen/character.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 620px;
+}
+
+#kywaeen-maxwidth {
+  max-width: 515px;
+}
